@@ -345,6 +345,14 @@ config PHY_NCSI
 
 endif #PHYLIB
 
+config SYS_MEMAC_LITTLE_ENDIAN
+	bool
+
+config FSL_MEMAC
+	bool "NXP mEMAC PHY support"
+	select SYS_MEMAC_LITTLE_ENDIAN if ARCH_LS1028A || ARCH_LS1028A || \
+		ARCH_LS2080A || ARCH_LX2160A || ARCH_LX2162A
+
 config PHY_RESET_DELAY
 	int "Extra delay after reset before MII register access"
 	default 0
