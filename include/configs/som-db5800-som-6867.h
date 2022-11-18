@@ -17,6 +17,6 @@
 					"stderr=serial,vidconsole\0"
 
 #define VIDEO_IO_OFFSET				0
-#define CONFIG_X86EMU_RAW_IO
+#define CFG_X86EMU_RAW_IO
 
 #endif	/* __CONFIG_H */
