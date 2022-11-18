@@ -6,7 +6,7 @@
 #ifndef __CONFIG_H
 #define __CONFIG_H
 
-#define CONFIG_MALLOC_F_ADDR		0x0010000
+#define CFG_MALLOC_F_ADDR		0x0010000
 
 /* GUIDs for capsule updatable firmware images */
 #define SANDBOX_UBOOT_IMAGE_GUID \
