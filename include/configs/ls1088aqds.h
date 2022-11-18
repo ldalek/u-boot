@@ -14,7 +14,7 @@
 
 #define COUNTER_FREQUENCY_REAL		(get_board_sys_clk()/4)
 
-#define CONFIG_MEM_INIT_VALUE           0xdeadbeef
+#define CFG_MEM_INIT_VALUE           0xdeadbeef
 #define SPD_EEPROM_ADDRESS		0x51
 
 

@@ -45,7 +45,7 @@
  * These can be toggled for performance analysis, otherwise use default.
  */
 #ifdef CONFIG_DDR_ECC
-#define CONFIG_MEM_INIT_VALUE		0xdeadbeef
+#define CFG_MEM_INIT_VALUE		0xdeadbeef
 #endif
 
 /*

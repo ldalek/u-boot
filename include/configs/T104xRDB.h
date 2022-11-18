@@ -65,7 +65,7 @@
  */
 #define CFG_SYS_INIT_L2CSR0		L2CSR0_L2E
 #ifdef CONFIG_DDR_ECC
-#define CONFIG_MEM_INIT_VALUE		0xdeadbeef
+#define CFG_MEM_INIT_VALUE		0xdeadbeef
 #endif
 
 /*

@@ -142,7 +142,7 @@ void dma_meminit(uint val, uint size)
 		if (((uint)p & 0x1f) == 0)
 			ppcDcbz((ulong)p);
 
-		*p = (uint)CONFIG_MEM_INIT_VALUE;
+		*p = (uint)CFG_MEM_INIT_VALUE;
 
 		if (((uint)p & 0x1c) == 0x1c)
 			ppcDcbf((ulong)p);

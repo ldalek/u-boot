@@ -13,7 +13,7 @@
 #define SPD_EEPROM_ADDRESS		0x51
 
 #ifdef CONFIG_DDR_ECC
-#define CONFIG_MEM_INIT_VALUE           0xdeadbeef
+#define CFG_MEM_INIT_VALUE           0xdeadbeef
 #endif
 
 #ifdef CONFIG_SYS_DPAA_FMAN

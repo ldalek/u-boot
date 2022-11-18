@@ -16,7 +16,7 @@
 #endif
 
 /* DDR */
-#define CONFIG_MEM_INIT_VALUE		0xdeadbeef
+#define CFG_MEM_INIT_VALUE		0xdeadbeef
 
 #define CONFIG_VERY_BIG_RAM
 #define CFG_SYS_DDR_SDRAM_BASE	0x80000000

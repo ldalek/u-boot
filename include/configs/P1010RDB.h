@@ -104,7 +104,7 @@
 /* DDR Setup */
 #define SPD_EEPROM_ADDRESS		0x52
 
-#define CONFIG_MEM_INIT_VALUE		0xDeadBeef
+#define CFG_MEM_INIT_VALUE		0xDeadBeef
 
 #ifndef __ASSEMBLY__
 extern unsigned long get_sdram_size(void);

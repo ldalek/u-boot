@@ -12,7 +12,7 @@
 /* Physical Memory Map */
 
 #ifndef CONFIG_SPL
-#define CONFIG_MEM_INIT_VALUE           0xdeadbeef
+#define CFG_MEM_INIT_VALUE           0xdeadbeef
 #endif
 
 /*

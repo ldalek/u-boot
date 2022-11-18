@@ -938,7 +938,7 @@ static void set_ddr_sdram_cfg_2(const unsigned int ctrl_num,
 #if defined(CONFIG_ECC_INIT_VIA_DDRCONTROLLER)
 	/* Use the DDR controller to auto initialize memory. */
 	d_init = popts->ecc_init_using_memctl;
-	ddr->ddr_data_init = CONFIG_MEM_INIT_VALUE;
+	ddr->ddr_data_init = CFG_MEM_INIT_VALUE;
 	debug("DDR: ddr_data_init = 0x%08x\n", ddr->ddr_data_init);
 #else
 	/* Memory will be initialized via DMA, or not at all. */
@@ -1847,8 +1847,8 @@ static void set_ddr_data_init(fsl_ddr_cfg_regs_t *ddr)
 {
 	unsigned int init_value;	/* Initialization value */
 
-#ifdef CONFIG_MEM_INIT_VALUE
-	init_value = CONFIG_MEM_INIT_VALUE;
+#ifdef CFG_MEM_INIT_VALUE
+	init_value = CFG_MEM_INIT_VALUE;
 #else
 	init_value = 0xDEADBEEF;
 #endif
