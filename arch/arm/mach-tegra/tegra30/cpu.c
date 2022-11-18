@@ -58,7 +58,7 @@ static void enable_cpu_power_rail(void)
 	writel(reg, &pmc->pmc_cntrl);
 
 	/* Set VDD_CORE to 1.200V. */
-#ifdef CONFIG_TEGRA_VDD_CORE_TPS62366A_SET1
+#ifdef CFG_TEGRA_VDD_CORE_TPS62366A_SET1
 	tegra_i2c_ll_write_addr(TPS62366A_I2C_ADDR, 2);
 	tegra_i2c_ll_write_data(TPS62366A_SET1_DATA, I2C_SEND_2_BYTES);
 #endif
