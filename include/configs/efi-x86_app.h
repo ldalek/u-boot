@@ -8,7 +8,7 @@
 
 #include <configs/x86-common.h>
 
-#undef CONFIG_TPM_TIS_BASE_ADDRESS
+#undef CFG_TPM_TIS_BASE_ADDRESS
 
 #define CFG_STD_DEVICES_SETTINGS	"stdin=serial\0" \
 					"stdout=vidconsole\0" \

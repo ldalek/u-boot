@@ -585,7 +585,7 @@ The following options need to be configured:
 		Support for generic parallel port TPM devices. Only one device
 		per system is supported at this time.
 
-			CONFIG_TPM_TIS_BASE_ADDRESS
+			CFG_TPM_TIS_BASE_ADDRESS
 			Base address where the generic TPM device is mapped
 			to. Contemporary x86 systems usually map it at
 			0xfed40000.

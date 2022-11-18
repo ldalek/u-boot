@@ -16,7 +16,7 @@
  */
 
 /* Generic TPM interfaced through LPC bus */
-#define CONFIG_TPM_TIS_BASE_ADDRESS        0xfed40000
+#define CFG_TPM_TIS_BASE_ADDRESS        0xfed40000
 
 /*-----------------------------------------------------------------------
  * Serial Configuration
