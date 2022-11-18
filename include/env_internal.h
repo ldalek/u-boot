@@ -41,8 +41,8 @@
 	(CONFIG_SYS_MONITOR_BASE + CONFIG_SYS_MONITOR_LEN)
 #  define ENV_IS_EMBEDDED
 # endif
-# ifdef CONFIG_ENV_IS_EMBEDDED
-#  error "do not define CONFIG_ENV_IS_EMBEDDED in your board config"
+# ifdef CFG_ENV_IS_EMBEDDED
+#  error "do not define CFG_ENV_IS_EMBEDDED in your board config"
 #  error "it is calculated automatically for you"
 # endif
 #endif	/* CONFIG_ENV_IS_IN_FLASH */
@@ -61,15 +61,15 @@ extern unsigned long nand_env_oob_offset;
  * For the flash types where embedded env is supported, but it cannot be
  * calculated automatically (i.e. NAND), take the board opt-in.
  */
-#if defined(CONFIG_ENV_IS_EMBEDDED) && !defined(ENV_IS_EMBEDDED)
+#if defined(CFG_ENV_IS_EMBEDDED) && !defined(ENV_IS_EMBEDDED)
 # define ENV_IS_EMBEDDED
 #endif
 
 /* The build system likes to know if the env is embedded */
 #ifdef DO_DEPS_ONLY
 # ifdef ENV_IS_EMBEDDED
-#  ifndef CONFIG_ENV_IS_EMBEDDED
-#   define CONFIG_ENV_IS_EMBEDDED
+#  ifndef CFG_ENV_IS_EMBEDDED
+#   define CFG_ENV_IS_EMBEDDED
 #  endif
 # endif
 #endif
@@ -88,7 +88,7 @@ extern unsigned long nand_env_oob_offset;
  * If the environment is in RAM, allocate extra space for it in the malloc
  * region.
  */
-#if defined(CONFIG_ENV_IS_EMBEDDED)
+#if defined(CFG_ENV_IS_EMBEDDED)
 #define TOTAL_MALLOC_LEN	CONFIG_SYS_MALLOC_LEN
 #elif (CONFIG_ENV_ADDR + CONFIG_ENV_SIZE < CONFIG_SYS_MONITOR_BASE) || \
       (CONFIG_ENV_ADDR >= CONFIG_SYS_MONITOR_BASE + CONFIG_SYS_MONITOR_LEN) || \
