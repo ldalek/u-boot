@@ -166,7 +166,7 @@ flash_write(char *src, ulong addr, ulong cnt)
 		src  += len;
 	}
 
-#if defined(CONFIG_FLASH_VERIFY)
+#if defined(CFG_FLASH_VERIFY)
 	if (memcmp(src_orig, addr_orig, cnt_orig)) {
 		printf("\nVerify failed!\n");
 		return ERR_PROG_ERROR;

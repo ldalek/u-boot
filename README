@@ -1486,7 +1486,7 @@ Configuration Settings:
 		digits and dots.  Recommended value: 45 (9..1) for 80
 		column displays, 15 (3..1) for 40 column displays.
 
-- CONFIG_FLASH_VERIFY
+- CFG_FLASH_VERIFY
 		If defined, the content of the flash (destination) is compared
 		against the source after the write operation. An error message
 		will be printed when the contents are not identical.
