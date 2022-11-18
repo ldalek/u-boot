@@ -17,8 +17,8 @@
 
 /* Defines for SPL */
 
-#define CONFIG_SPI_ADDR			0x30000000
-#define CFG_SYS_UBOOT_BASE		(CONFIG_SPI_ADDR + CONFIG_SPL_PAD_TO)
+#define CFG_SPI_ADDR			0x30000000
+#define CFG_SYS_UBOOT_BASE		(CFG_SPI_ADDR + CONFIG_SPL_PAD_TO)
 
 /* SPL -> Uboot */
 
