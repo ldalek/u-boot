@@ -223,7 +223,7 @@
  * Environment Configuration
  */
 
-#define CONFIG_NETDEV		"eth1"
+#define CFG_NETDEV		"eth1"
 
 #define CFG_HOSTNAME		"mpc837x_rdb"
 #define CONFIG_ROOTPATH		"/nfsroot"
@@ -232,7 +232,7 @@
 #define CFG_FDTFILE		"mpc8379_rdb.dtb"
 
 #define CFG_EXTRA_ENV_SETTINGS \
-	"netdev=" CONFIG_NETDEV "\0"				\
+	"netdev=" CFG_NETDEV "\0"				\
 	"uboot=" CONFIG_UBOOTPATH "\0"					\
 	"tftpflash=tftp $loadaddr $uboot;"				\
 		"protect off " __stringify(CONFIG_TEXT_BASE)	\
