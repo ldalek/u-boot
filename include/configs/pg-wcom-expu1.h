@@ -10,7 +10,7 @@
 #define CFG_HOSTNAME				"EXPU1"
 
 #define CONFIG_KM_UBI_PARTITION_NAME_BOOT	"ubi0"
-#define CONFIG_KM_UBI_PARTITION_NAME_APP	"ubi1"
+#define CFG_KM_UBI_PARTITION_NAME_APP	"ubi1"
 
 /* CLIPS FPGA Definitions */
 #define CFG_SYS_CSPR3_EXT	(0x00)
