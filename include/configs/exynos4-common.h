@@ -19,7 +19,7 @@
 #define CFG_G_DNL_THOR_VENDOR_NUM 0x04E8
 #define CFG_G_DNL_THOR_PRODUCT_NUM 0x685D
 #define CONFIG_G_DNL_UMS_VENDOR_NUM 0x0525
-#define CONFIG_G_DNL_UMS_PRODUCT_NUM 0xA4A5
+#define CFG_G_DNL_UMS_PRODUCT_NUM 0xA4A5
 
 /* Common environment variables */
 #define ENV_ITB \

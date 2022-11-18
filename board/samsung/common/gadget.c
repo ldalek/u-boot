@@ -14,7 +14,7 @@ int g_dnl_bind_fixup(struct usb_device_descriptor *dev, const char *name)
 		put_unaligned(CFG_G_DNL_THOR_PRODUCT_NUM, &dev->idProduct);
 	} else if (!strcmp(name, "usb_dnl_ums")) {
 		put_unaligned(CONFIG_G_DNL_UMS_VENDOR_NUM, &dev->idVendor);
-		put_unaligned(CONFIG_G_DNL_UMS_PRODUCT_NUM, &dev->idProduct);
+		put_unaligned(CFG_G_DNL_UMS_PRODUCT_NUM, &dev->idProduct);
 	} else {
 		put_unaligned(CONFIG_USB_GADGET_VENDOR_NUM, &dev->idVendor);
 		put_unaligned(CONFIG_USB_GADGET_PRODUCT_NUM, &dev->idProduct);
