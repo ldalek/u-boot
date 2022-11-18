@@ -37,8 +37,8 @@
 
 DECLARE_GLOBAL_DATA_PTR;
 
-#ifndef CONFIG_MVGBE_PORTS
-# define CONFIG_MVGBE_PORTS {0, 0}
+#ifndef CFG_MVGBE_PORTS
+# define CFG_MVGBE_PORTS {0, 0}
 #endif
 
 #define MV_PHY_ADR_REQUEST 0xee
@@ -832,7 +832,7 @@ int mvgbe_initialize(struct bd_info *bis)
 	struct eth_device *dev;
 	int devnum;
 	int ret;
-	u8 used_ports[MAX_MVGBE_DEVS] = CONFIG_MVGBE_PORTS;
+	u8 used_ports[MAX_MVGBE_DEVS] = CFG_MVGBE_PORTS;
 
 	for (devnum = 0; devnum < MAX_MVGBE_DEVS; devnum++) {
 		/*skip if port is configured not to use */

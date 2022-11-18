@@ -48,7 +48,7 @@
  * Ethernet Driver configuration
  */
 #ifdef CONFIG_CMD_NET
-#define CONFIG_MVGBE_PORTS	{1, 0}	/* enable a single port */
+#define CFG_MVGBE_PORTS	{1, 0}	/* enable a single port */
 #define CONFIG_PHY_BASE_ADR	0x01
 #endif /* CONFIG_CMD_NET */
 

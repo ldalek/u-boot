@@ -38,9 +38,9 @@
  */
 #ifdef CONFIG_CMD_NET
 # ifdef CONFIG_BOARD_IS_OPENRD_BASE
-#  define CONFIG_MVGBE_PORTS	{1, 0}	/* enable port 0 only */
+#  define CFG_MVGBE_PORTS	{1, 0}	/* enable port 0 only */
 # else
-#  define CONFIG_MVGBE_PORTS	{1, 1}	/* enable both ports */
+#  define CFG_MVGBE_PORTS	{1, 1}	/* enable both ports */
 # endif
 # ifdef CONFIG_BOARD_IS_OPENRD_ULTIMATE
 #  define CONFIG_PHY_BASE_ADR	0x0
