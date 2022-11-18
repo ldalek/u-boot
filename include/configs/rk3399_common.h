@@ -8,7 +8,7 @@
 
 #include "rockchip-common.h"
 
-#define CONFIG_IRAM_BASE		0xff8c0000
+#define CFG_IRAM_BASE		0xff8c0000
 
 #if defined(CONFIG_SPL_BUILD) && defined(CONFIG_TPL_BOOTROM_SUPPORT)
 #else
