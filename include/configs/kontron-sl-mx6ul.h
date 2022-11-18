@@ -22,7 +22,7 @@
 #define CFG_SYS_UBOOT_BASE		CONFIG_TEXT_BASE
 
 /* Board and environment settings */
-#define CONFIG_MXC_UART_BASE		UART4_BASE
+#define CFG_MXC_UART_BASE		UART4_BASE
 #define CFG_HOSTNAME			"kontron-mx6ul"
 
 #ifdef CONFIG_USB_EHCI_HCD

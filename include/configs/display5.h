@@ -34,7 +34,7 @@
 #define CFG_SYS_SPI_ARGS_OFFS        0x140000
 #define CFG_SYS_SPI_ARGS_SIZE        0x10000
 
-#define CONFIG_MXC_UART_BASE		UART5_BASE
+#define CFG_MXC_UART_BASE		UART5_BASE
 
 /* I2C Configs */
 #define CFG_I2C_MULTI_BUS

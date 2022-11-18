@@ -13,7 +13,7 @@
 
 #define CONFIG_USBD_HS
 
-#define CONFIG_MXC_UART_BASE	       UART2_BASE
+#define CFG_MXC_UART_BASE	       UART2_BASE
 
 /* MMC Configs */
 #define CFG_SYS_FSL_ESDHC_ADDR      0
