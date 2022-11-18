@@ -97,6 +97,6 @@
  */
 
 /* Ethernet */
-#define CONFIG_PHY_ET1011C_TX_CLK_FIX
+#define CFG_PHY_ET1011C_TX_CLK_FIX
 
 #endif	/* ! __CONFIG_TI814X_EVM_H */
