@@ -70,7 +70,7 @@ enum link_type {
 #define DEVICE_EMACSW_BASE(base, x)	((base) + EMAC_EMACSW_PORT_BASE_OFS +  \
 					 (x) * 0x30)
 
-#elif defined(CONFIG_KSNET_NETCP_V1_5)
+#elif defined(CFG_KSNET_NETCP_V1_5)
 
 #define EMAC_EMACSW_PORT_BASE_OFS	0x222000
 

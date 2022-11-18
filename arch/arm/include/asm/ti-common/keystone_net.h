@@ -30,7 +30,7 @@
 #define CPGMACSL_REG_RESET		0x0c
 #define CPGMACSL_REG_MAXLEN		0x10
 
-#elif defined CONFIG_KSNET_NETCP_V1_5
+#elif defined CFG_KSNET_NETCP_V1_5
 
 #define GBETH_BASE			(CFG_KSNET_NETCP_BASE + 0x00200000)
 #define CPGMACSL_REG_RX_PRI_MAP		0x020
@@ -130,7 +130,7 @@ struct mac_sl_cfg {
 #define CPSW_REG_ALE_PORTCTL(x)			(0x640 + (x) * 4)
 #define CPSW_REG_VAL_STAT_ENABLE_ALL		0xf
 
-#elif defined CONFIG_KSNET_NETCP_V1_5
+#elif defined CFG_KSNET_NETCP_V1_5
 
 #define DEVICE_CPSW_BASE			(GBETH_BASE + 0x20000)
 #define CPSW_REG_CTL				0x00004
@@ -168,7 +168,7 @@ struct mac_sl_cfg {
 
 #ifdef CFG_KSNET_NETCP_V1_0
 #define SGMII_OFFSET(x)		((x <= 1) ? (x * 0x100) : ((x * 0x100) + 0x100))
-#elif defined CONFIG_KSNET_NETCP_V1_5
+#elif defined CFG_KSNET_NETCP_V1_5
 #define SGMII_OFFSET(x)		((x) * 0x100)
 #endif
 
@@ -195,7 +195,7 @@ struct mac_sl_cfg {
 #define hw_config_streaming_switch()\
 	writel(DEVICE_PSTREAM_CFG_VAL_ROUTE_CPPI, DEVICE_PSTREAM_CFG_REG_ADDR);
 
-#elif defined CONFIG_KSNET_NETCP_V1_5
+#elif defined CFG_KSNET_NETCP_V1_5
 
 #define DEVICE_PSTREAM_CFG_REG_ADDR	(CFG_KSNET_NETCP_BASE + 0x500)
 #define DEVICE_PSTREAM_CFG_VAL_ROUTE_CPPI	0x0
