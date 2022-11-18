@@ -17,7 +17,7 @@
 #define __CONFIG_H
 
 /* High Level Configuration Options */
-#define CONFIG_SOCRATES		1
+#define CFG_SOCRATES		1
 
 /*
  * Only possible on E500 Version 2 or newer cores.
