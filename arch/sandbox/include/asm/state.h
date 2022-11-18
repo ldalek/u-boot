@@ -98,7 +98,7 @@ struct sandbox_state {
 	bool autoboot_keyed;		/* Use keyed-autoboot feature */
 
 	/* Pointer to information for each SPI bus/cs */
-	struct sandbox_spi_info spi[CONFIG_SANDBOX_SPI_MAX_BUS]
+	struct sandbox_spi_info spi[CFG_SANDBOX_SPI_MAX_BUS]
 					[CONFIG_SANDBOX_SPI_MAX_CS];
 
 	/* Information about Watchdog */
