@@ -372,7 +372,7 @@ static void _mxc_nand_enable_hwecc(struct mtd_info *mtd, int on)
 #endif
 }
 
-#ifdef CONFIG_MXC_NAND_HWECC
+#ifdef CFG_MXC_NAND_HWECC
 static void mxc_nand_enable_hwecc(struct mtd_info *mtd, int mode)
 {
 	/*
@@ -1179,7 +1179,7 @@ int board_nand_init(struct nand_chip *this)
 #endif
 	host->clk_act = 1;
 
-#ifdef CONFIG_MXC_NAND_HWECC
+#ifdef CFG_MXC_NAND_HWECC
 	this->ecc.calculate = mxc_nand_calculate_ecc;
 	this->ecc.hwctl = mxc_nand_enable_hwecc;
 	this->ecc.correct = mxc_nand_correct_data;
