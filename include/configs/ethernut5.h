@@ -48,7 +48,7 @@
 /* JFFS2 */
 
 /* Ethernet */
-#define CONFIG_PHY_ID			0
+#define CFG_PHY_ID			0
 #define CFG_MACB_SEARCH_PHY
 
 /* MMC */
