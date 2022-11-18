@@ -168,7 +168,7 @@ static int uart_configs[] = {
 #if defined(CONFIG_TEGRA20)
  #if defined(CONFIG_TEGRA_UARTA_UAA_UAB)
 	FUNCMUX_UART1_UAA_UAB,
- #elif defined(CONFIG_TEGRA_UARTA_GPU)
+ #elif defined(CFG_TEGRA_UARTA_GPU)
 	FUNCMUX_UART1_GPU,
  #elif defined(CONFIG_TEGRA_UARTA_SDIO1)
 	FUNCMUX_UART1_SDIO1,

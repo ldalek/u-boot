@@ -15,7 +15,7 @@
 
 /* Board-specific serial config */
 #define CFG_TEGRA_ENABLE_UARTA
-#define CONFIG_TEGRA_UARTA_GPU
+#define CFG_TEGRA_UARTA_GPU
 #define CFG_SYS_NS16550_COM1		NV_PA_APB_UARTA_BASE
 
 /* SPI */
