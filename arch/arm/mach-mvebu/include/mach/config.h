@@ -35,7 +35,7 @@
  */
 #ifdef CONFIG_CMD_I2C
 #ifndef CONFIG_SYS_I2C_SOFT
-#define CONFIG_I2C_MVTWSI
+#define CFG_I2C_MVTWSI
 #endif
 #endif
 

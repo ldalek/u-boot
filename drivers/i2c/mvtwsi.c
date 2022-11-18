@@ -25,7 +25,7 @@
 DECLARE_GLOBAL_DATA_PTR;
 
 /*
- * Include a file that will provide CONFIG_I2C_MVTWSI_BASE*, and possibly other
+ * Include a file that will provide CFG_I2C_MVTWSI_BASE*, and possibly other
  * settings
  */
 
@@ -197,29 +197,29 @@ inline uint calc_tick(uint speed)
 static struct mvtwsi_registers *twsi_get_base(struct i2c_adapter *adap)
 {
 	switch (adap->hwadapnr) {
-#ifdef CONFIG_I2C_MVTWSI_BASE0
+#ifdef CFG_I2C_MVTWSI_BASE0
 	case 0:
-		return (struct mvtwsi_registers *)CONFIG_I2C_MVTWSI_BASE0;
+		return (struct mvtwsi_registers *)CFG_I2C_MVTWSI_BASE0;
 #endif
-#ifdef CONFIG_I2C_MVTWSI_BASE1
+#ifdef CFG_I2C_MVTWSI_BASE1
 	case 1:
-		return (struct mvtwsi_registers *)CONFIG_I2C_MVTWSI_BASE1;
+		return (struct mvtwsi_registers *)CFG_I2C_MVTWSI_BASE1;
 #endif
-#ifdef CONFIG_I2C_MVTWSI_BASE2
+#ifdef CFG_I2C_MVTWSI_BASE2
 	case 2:
-		return (struct mvtwsi_registers *)CONFIG_I2C_MVTWSI_BASE2;
+		return (struct mvtwsi_registers *)CFG_I2C_MVTWSI_BASE2;
 #endif
-#ifdef CONFIG_I2C_MVTWSI_BASE3
+#ifdef CFG_I2C_MVTWSI_BASE3
 	case 3:
-		return (struct mvtwsi_registers *)CONFIG_I2C_MVTWSI_BASE3;
+		return (struct mvtwsi_registers *)CFG_I2C_MVTWSI_BASE3;
 #endif
-#ifdef CONFIG_I2C_MVTWSI_BASE4
+#ifdef CFG_I2C_MVTWSI_BASE4
 	case 4:
-		return (struct mvtwsi_registers *)CONFIG_I2C_MVTWSI_BASE4;
+		return (struct mvtwsi_registers *)CFG_I2C_MVTWSI_BASE4;
 #endif
-#ifdef CONFIG_I2C_MVTWSI_BASE5
+#ifdef CFG_I2C_MVTWSI_BASE5
 	case 5:
-		return (struct mvtwsi_registers *)CONFIG_I2C_MVTWSI_BASE5;
+		return (struct mvtwsi_registers *)CFG_I2C_MVTWSI_BASE5;
 #endif
 	default:
 		printf("Missing mvtwsi controller %d base\n", adap->hwadapnr);
@@ -737,41 +737,41 @@ static int twsi_i2c_write(struct i2c_adapter *adap, uchar chip, uint addr,
 				10000);
 }
 
-#ifdef CONFIG_I2C_MVTWSI_BASE0
+#ifdef CFG_I2C_MVTWSI_BASE0
 U_BOOT_I2C_ADAP_COMPLETE(twsi0, twsi_i2c_init, twsi_i2c_probe,
 			 twsi_i2c_read, twsi_i2c_write,
 			 twsi_i2c_set_bus_speed,
 			 CONFIG_SYS_I2C_SPEED, CONFIG_SYS_I2C_SLAVE, 0)
 #endif
-#ifdef CONFIG_I2C_MVTWSI_BASE1
+#ifdef CFG_I2C_MVTWSI_BASE1
 U_BOOT_I2C_ADAP_COMPLETE(twsi1, twsi_i2c_init, twsi_i2c_probe,
 			 twsi_i2c_read, twsi_i2c_write,
 			 twsi_i2c_set_bus_speed,
 			 CONFIG_SYS_I2C_SPEED, CONFIG_SYS_I2C_SLAVE, 1)
 
 #endif
-#ifdef CONFIG_I2C_MVTWSI_BASE2
+#ifdef CFG_I2C_MVTWSI_BASE2
 U_BOOT_I2C_ADAP_COMPLETE(twsi2, twsi_i2c_init, twsi_i2c_probe,
 			 twsi_i2c_read, twsi_i2c_write,
 			 twsi_i2c_set_bus_speed,
 			 CONFIG_SYS_I2C_SPEED, CONFIG_SYS_I2C_SLAVE, 2)
 
 #endif
-#ifdef CONFIG_I2C_MVTWSI_BASE3
+#ifdef CFG_I2C_MVTWSI_BASE3
 U_BOOT_I2C_ADAP_COMPLETE(twsi3, twsi_i2c_init, twsi_i2c_probe,
 			 twsi_i2c_read, twsi_i2c_write,
 			 twsi_i2c_set_bus_speed,
 			 CONFIG_SYS_I2C_SPEED, CONFIG_SYS_I2C_SLAVE, 3)
 
 #endif
-#ifdef CONFIG_I2C_MVTWSI_BASE4
+#ifdef CFG_I2C_MVTWSI_BASE4
 U_BOOT_I2C_ADAP_COMPLETE(twsi4, twsi_i2c_init, twsi_i2c_probe,
 			 twsi_i2c_read, twsi_i2c_write,
 			 twsi_i2c_set_bus_speed,
 			 CONFIG_SYS_I2C_SPEED, CONFIG_SYS_I2C_SLAVE, 4)
 
 #endif
-#ifdef CONFIG_I2C_MVTWSI_BASE5
+#ifdef CFG_I2C_MVTWSI_BASE5
 U_BOOT_I2C_ADAP_COMPLETE(twsi5, twsi_i2c_init, twsi_i2c_probe,
 			 twsi_i2c_read, twsi_i2c_write,
 			 twsi_i2c_set_bus_speed,
