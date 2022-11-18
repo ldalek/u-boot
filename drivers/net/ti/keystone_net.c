@@ -58,7 +58,7 @@ enum link_type {
 			 ((mac)[2] << 16) | ((mac)[3] << 24))
 #define mac_lo(mac)     (((mac)[4] << 0) | ((mac)[5] << 8))
 
-#ifdef CONFIG_KSNET_NETCP_V1_0
+#ifdef CFG_KSNET_NETCP_V1_0
 
 #define EMAC_EMACSW_BASE_OFS		0x90800
 #define EMAC_EMACSW_PORT_BASE_OFS	(EMAC_EMACSW_BASE_OFS + 0x60)

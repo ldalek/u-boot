@@ -16,7 +16,7 @@
 #endif
 
 /* EMAC */
-#ifdef CONFIG_KSNET_NETCP_V1_0
+#ifdef CFG_KSNET_NETCP_V1_0
 
 #define GBETH_BASE			(CFG_KSNET_NETCP_BASE + 0x00090000)
 #define EMAC_EMACSL_BASE_ADDR		(GBETH_BASE + 0x900)
@@ -120,7 +120,7 @@ struct mac_sl_cfg {
 #define DEVICE_CPSW_NUM_PORTS			CFG_KSNET_CPSW_NUM_PORTS
 #define DEVICE_N_GMACSL_PORTS			(DEVICE_CPSW_NUM_PORTS - 1)
 
-#ifdef CONFIG_KSNET_NETCP_V1_0
+#ifdef CFG_KSNET_NETCP_V1_0
 
 #define DEVICE_CPSW_BASE			(GBETH_BASE + 0x800)
 #define CPSW_REG_CTL				0x004
@@ -166,7 +166,7 @@ struct mac_sl_cfg {
 #define SGMII_LINK_MAC_FIBER			3
 #define SGMII_LINK_MAC_PHY_FORCED		4
 
-#ifdef CONFIG_KSNET_NETCP_V1_0
+#ifdef CFG_KSNET_NETCP_V1_0
 #define SGMII_OFFSET(x)		((x <= 1) ? (x * 0x100) : ((x * 0x100) + 0x100))
 #elif defined CONFIG_KSNET_NETCP_V1_5
 #define SGMII_OFFSET(x)		((x) * 0x100)
@@ -188,7 +188,7 @@ struct mac_sl_cfg {
 #define RGMII_STATUS_REG		(GBETH_BASE + 0x18)
 
 /* PSS */
-#ifdef CONFIG_KSNET_NETCP_V1_0
+#ifdef CFG_KSNET_NETCP_V1_0
 
 #define DEVICE_PSTREAM_CFG_REG_ADDR	(CFG_KSNET_NETCP_BASE + 0x604)
 #define DEVICE_PSTREAM_CFG_VAL_ROUTE_CPPI	0x06060606
