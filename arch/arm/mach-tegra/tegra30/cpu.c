@@ -62,7 +62,7 @@ static void enable_cpu_power_rail(void)
 	tegra_i2c_ll_write_addr(TPS62366A_I2C_ADDR, 2);
 	tegra_i2c_ll_write_data(TPS62366A_SET1_DATA, I2C_SEND_2_BYTES);
 #endif
-#ifdef CONFIG_TEGRA_VDD_CORE_TPS62361B_SET3
+#ifdef CFG_TEGRA_VDD_CORE_TPS62361B_SET3
 	tegra_i2c_ll_write_addr(TPS62361B_I2C_ADDR, 2);
 	tegra_i2c_ll_write_data(TPS62361B_SET3_DATA, I2C_SEND_2_BYTES);
 #endif
