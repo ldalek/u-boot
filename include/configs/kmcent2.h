@@ -134,7 +134,7 @@
 
 /* High Level Configuration Options */
 
-#define CONFIG_RESET_VECTOR_ADDRESS	0xebfffffc
+#define CFG_RESET_VECTOR_ADDRESS	0xebfffffc
 
 #define CFG_SYS_NUM_CPC		CONFIG_SYS_NUM_DDR_CTLRS
 
