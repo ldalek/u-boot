@@ -11,7 +11,7 @@
  */
 #define CFG_MALTA
 
-#define CONFIG_MEMSIZE_IN_BYTES
+#define CFG_MEMSIZE_IN_BYTES
 
 /*
  * CPU Configuration

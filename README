@@ -373,11 +373,11 @@ The following options need to be configured:
 		such as ARM architectural timer initialization.
 
 - Linux Kernel Interface:
-		CONFIG_MEMSIZE_IN_BYTES		[relevant for MIPS only]
+		CFG_MEMSIZE_IN_BYTES		[relevant for MIPS only]
 
 		When transferring memsize parameter to Linux, some versions
 		expect it to be in bytes, others in MB.
-		Define CONFIG_MEMSIZE_IN_BYTES to make it in bytes.
+		Define CFG_MEMSIZE_IN_BYTES to make it in bytes.
 
 		CONFIG_OF_LIBFDT
 
