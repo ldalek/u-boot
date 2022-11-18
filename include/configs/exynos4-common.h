@@ -11,7 +11,7 @@
 #include "exynos-common.h"
 
 /* SD/MMC configuration */
-#define CONFIG_MMC_DEFAULT_DEV	0
+#define CFG_MMC_DEFAULT_DEV	0
 
 #define DFU_DEFAULT_POLL_TIMEOUT 300
 
