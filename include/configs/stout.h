@@ -26,7 +26,7 @@
 #define CFG_SCIF_A
 
 /* SPI */
-#define CONFIG_SPI_FLASH_QUAD
+#define CFG_SPI_FLASH_QUAD
 
 /* SH Ether */
 #define CFG_SH_ETHER_USE_PORT	0

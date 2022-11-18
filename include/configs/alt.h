@@ -21,7 +21,7 @@
 #define RCAR_GEN2_UBOOT_SDRAM_SIZE	(512 * 1024 * 1024)
 
 /* FLASH */
-#define CONFIG_SPI_FLASH_QUAD
+#define CFG_SPI_FLASH_QUAD
 
 /* SH Ether */
 #define CFG_SH_ETHER_USE_PORT	0
