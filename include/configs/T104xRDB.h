@@ -20,13 +20,13 @@
 
 #ifdef CONFIG_MTD_RAW_NAND
 #ifdef CONFIG_NXP_ESBC
-#define CONFIG_U_BOOT_HDR_SIZE		(16 << 10)
+#define CFG_U_BOOT_HDR_SIZE		(16 << 10)
 /*
  * HDR would be appended at end of image and copied to DDR along
  * with U-Boot image.
  */
 #define CFG_SYS_NAND_U_BOOT_SIZE	((768 << 10) + \
-					 CONFIG_U_BOOT_HDR_SIZE)
+					 CFG_U_BOOT_HDR_SIZE)
 #else
 #define CFG_SYS_NAND_U_BOOT_SIZE	(768 << 10)
 #endif

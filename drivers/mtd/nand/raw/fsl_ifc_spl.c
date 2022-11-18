@@ -281,7 +281,7 @@ void nand_boot(void)
 #define CONFIG_U_BOOT_HDR_ADDR \
 		((CFG_SYS_NAND_U_BOOT_START + \
 		  CFG_SYS_NAND_U_BOOT_SIZE) - \
-		 CONFIG_U_BOOT_HDR_SIZE)
+		 CFG_U_BOOT_HDR_SIZE)
 	spl_validate_uboot(CONFIG_U_BOOT_HDR_ADDR,
 			   CFG_SYS_NAND_U_BOOT_START);
 	/*

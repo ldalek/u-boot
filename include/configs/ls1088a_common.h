@@ -136,7 +136,7 @@ unsigned long long get_qixis_addr(void);
 
 #ifdef CONFIG_SPL
 #ifdef CONFIG_NXP_ESBC
-#define CONFIG_U_BOOT_HDR_SIZE		(16 << 10)
+#define CFG_U_BOOT_HDR_SIZE		(16 << 10)
 /*
  * HDR would be appended at end of image and copied to DDR along
  * with U-Boot image. Here u-boot max. size is 512K. So if binary

@@ -43,17 +43,17 @@
  * HDR would be appended at end of image and copied to DDR along
  * with U-Boot image.
  */
-#define CONFIG_U_BOOT_HDR_SIZE				(16 << 10)
+#define CFG_U_BOOT_HDR_SIZE				(16 << 10)
 #endif /* ifdef CONFIG_NXP_ESBC */
 
-#ifdef CONFIG_U_BOOT_HDR_SIZE
+#ifdef CFG_U_BOOT_HDR_SIZE
 /*
  * HDR would be appended at end of image and copied to DDR along
  * with U-Boot image. Here u-boot max. size is 512K. So if binary
  * size increases then increase this size in case of secure boot as
  * it uses raw u-boot image instead of fit image.
  */
-#endif /* ifdef CONFIG_U_BOOT_HDR_SIZE */
+#endif /* ifdef CFG_U_BOOT_HDR_SIZE */
 #endif
 
 #define PHYS_SDRAM			0x80000000
