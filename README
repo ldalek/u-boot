@@ -750,7 +750,7 @@ The following options need to be configured:
 		(Environment variable "serverip")
 
 - Gateway IP address:
-		CONFIG_GATEWAYIP
+		CFG_GATEWAYIP
 
 		Defines a default value for the IP address of the
 		default router where packets to other networks are
