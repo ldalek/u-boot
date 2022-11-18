@@ -16,7 +16,7 @@
 #endif
 
 /* MMC/SD IP block */
-#define CONFIG_ROCKCHIP_SDHCI_MAX_FREQ	200000000
+#define CFG_ROCKCHIP_SDHCI_MAX_FREQ	200000000
 
 /* RAW SD card / eMMC locations. */
 
