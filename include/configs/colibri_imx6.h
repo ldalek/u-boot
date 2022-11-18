@@ -30,8 +30,8 @@
 
 /* Command definition */
 
-#undef CONFIG_IPADDR
-#define CONFIG_IPADDR			192.168.10.2
+#undef CFG_IPADDR
+#define CFG_IPADDR			192.168.10.2
 #define CONFIG_NETMASK			255.255.255.0
 #undef CONFIG_SERVERIP
 #define CONFIG_SERVERIP			192.168.10.1

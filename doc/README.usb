@@ -162,7 +162,7 @@ common executable is discouraged, as it leads to potential conflicts,
 and all the parameters can either get stored in the board's external
 environment, or get obtained from the bootp server if not set.
 
-#define CONFIG_IPADDR		10.0.0.2  (replace with your value)
+#define CFG_IPADDR		10.0.0.2  (replace with your value)
 #define CONFIG_SERVERIP		10.0.0.1  (replace with your value)
 #define CONFIG_BOOTFILE		"uImage"
 

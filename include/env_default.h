@@ -53,8 +53,8 @@ const char default_environment[] = {
 #ifdef	CONFIG_ETHPRIME
 	"ethprime="	CONFIG_ETHPRIME			"\0"
 #endif
-#ifdef	CONFIG_IPADDR
-	"ipaddr="	__stringify(CONFIG_IPADDR)	"\0"
+#ifdef	CFG_IPADDR
+	"ipaddr="	__stringify(CFG_IPADDR)	"\0"
 #endif
 #ifdef	CONFIG_SERVERIP
 	"serverip="	__stringify(CONFIG_SERVERIP)	"\0"

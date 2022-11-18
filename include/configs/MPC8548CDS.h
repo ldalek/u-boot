@@ -325,7 +325,7 @@
  * Environment Configuration
  */
 
-#define CONFIG_IPADDR	 192.168.1.253
+#define CFG_IPADDR	 192.168.1.253
 
 #define CFG_HOSTNAME	 "unknown"
 #define CONFIG_ROOTPATH	 "/nfsroot"

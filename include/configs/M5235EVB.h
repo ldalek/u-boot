@@ -27,7 +27,7 @@
 
 /* this must be included AFTER the definition of CONFIG COMMANDS (if any) */
 #ifdef CONFIG_MCFFEC
-#	define CONFIG_IPADDR	192.162.1.2
+#	define CFG_IPADDR	192.162.1.2
 #	define CONFIG_NETMASK	255.255.255.0
 #	define CONFIG_SERVERIP	192.162.1.1
 #	define CFG_GATEWAYIP	192.162.1.1

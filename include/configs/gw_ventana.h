@@ -57,7 +57,7 @@
 /* Persistent Environment Config */
 
 /* Environment */
-#define CONFIG_IPADDR             192.168.1.1
+#define CFG_IPADDR             192.168.1.1
 #define CONFIG_SERVERIP           192.168.1.146
 
 #endif			       /* __CONFIG_H */

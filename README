@@ -735,7 +735,7 @@ The following options need to be configured:
 		command issued before MII status register can be read
 
 - IP address:
-		CONFIG_IPADDR
+		CFG_IPADDR
 
 		Define a default value for the IP address to use for
 		the default Ethernet interface, in case this is not

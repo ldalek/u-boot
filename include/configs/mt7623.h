@@ -33,7 +33,7 @@
 	"fdtfile=" CONFIG_DEFAULT_FDT_FILE "\0"
 
 /* Ethernet */
-#define CONFIG_IPADDR			192.168.1.1
+#define CFG_IPADDR			192.168.1.1
 #define CONFIG_SERVERIP			192.168.1.2
 
 #ifdef CONFIG_DISTRO_DEFAULTS
