@@ -79,10 +79,10 @@ please first check:
 
 	in ./include/configs/cobra5272.h
 
-		CONFIG_MONITOR_IS_IN_RAM has to be undefined, e. g. as follows:
+		CFG_MONITOR_IS_IN_RAM has to be undefined, e. g. as follows:
 
 		#if 0
-			#define CONFIG_MONITOR_IS_IN_RAM
+			#define CFG_MONITOR_IS_IN_RAM
 			/* define if monitor is started from a pre-loader */
 		#endif
 
@@ -118,10 +118,10 @@ please modify the settings:
 
 	in ./include/configs/cobra5272.h
 
-		CONFIG_MONITOR_IS_IN_RAM now has to be defined, e. g. as follows:
+		CFG_MONITOR_IS_IN_RAM now has to be defined, e. g. as follows:
 
 		#if 1
-			#define CONFIG_MONITOR_IS_IN_RAM
+			#define CFG_MONITOR_IS_IN_RAM
 			/*define if monitor is started from a pre-loader */
 		#endif
 

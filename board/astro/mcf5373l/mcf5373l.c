@@ -32,7 +32,7 @@ int checkboard(void)
 
 int dram_init(void)
 {
-#if !defined(CONFIG_MONITOR_IS_IN_RAM)
+#if !defined(CFG_MONITOR_IS_IN_RAM)
 	sdram_t *sdp = (sdram_t *)(MMAP_SDRAM);
 
 	/*

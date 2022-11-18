@@ -192,7 +192,7 @@ int clock_pll(int fsys, int flags)
 #endif
 
 /* must not tamper with SDRAMC if running from SDRAM */
-#if !defined(CONFIG_MONITOR_IS_IN_RAM)
+#if !defined(CFG_MONITOR_IS_IN_RAM)
 	/*
 	 * Check to see if the SDRAM has already been initialized.
 	 * If it has then the SDRAM needs to be put into self refresh
@@ -244,7 +244,7 @@ int clock_pll(int fsys, int flags)
 
 	/* wait for DQS logic to relock */
 	for (i = 0; i < 0x200; i++) ;
-#endif /* !defined(CONFIG_MONITOR_IS_IN_RAM) */
+#endif /* !defined(CFG_MONITOR_IS_IN_RAM) */
 
 	return fout;
 }

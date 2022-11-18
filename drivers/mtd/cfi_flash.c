@@ -2360,7 +2360,7 @@ static void flash_protect_default(void)
 	/* Monitor protection ON by default */
 #if defined(CONFIG_SYS_MONITOR_BASE) && \
 	(CONFIG_SYS_MONITOR_BASE >= CFG_SYS_FLASH_BASE) && \
-	(!defined(CONFIG_MONITOR_IS_IN_RAM))
+	(!defined(CFG_MONITOR_IS_IN_RAM))
 	flash_protect(FLAG_PROTECT_SET,
 		      CONFIG_SYS_MONITOR_BASE,
 		      CONFIG_SYS_MONITOR_BASE + monitor_flash_len  - 1,

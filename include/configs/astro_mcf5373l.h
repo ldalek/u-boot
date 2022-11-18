@@ -45,7 +45,7 @@
  * boards.
  */
 #ifdef CONFIG_RAM
-#define CONFIG_MONITOR_IS_IN_RAM
+#define CFG_MONITOR_IS_IN_RAM
 #endif
 
 /* I2C */
@@ -73,16 +73,6 @@
  * Configuration for environment
  * Environment is located in the last sector of the flash
  */
-
-#ifndef CONFIG_MONITOR_IS_IN_RAM
-#else
-/*
- * environment in RAM - This is used to use a single PC-based application
- * to load an image, load U-Boot, load an environment and then start U-Boot
- * to execute the commands from the environment. Feedback is done via setting
- * and reading memory locations.
- */
-#endif
 
 /* here we put our FPGA configuration... */
 

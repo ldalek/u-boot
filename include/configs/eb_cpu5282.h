@@ -14,7 +14,7 @@
 
 #define CFG_SYS_UART_PORT		(0)
 
-#undef	CONFIG_MONITOR_IS_IN_RAM		/* starts uboot direct */
+#undef	CFG_MONITOR_IS_IN_RAM		/* starts uboot direct */
 
 /*----------------------------------------------------------------------*
  * Options								*

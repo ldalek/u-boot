@@ -334,7 +334,7 @@ void cpu_init_f(void)
 	/* if we come from RAM we assume the CPU is
 	 * already initialized.
 	 */
-#ifndef CONFIG_MONITOR_IS_IN_RAM
+#ifndef CFG_MONITOR_IS_IN_RAM
 	sysctrl_t *sysctrl = (sysctrl_t *) (CFG_SYS_MBAR);
 	gpio_t *gpio = (gpio_t *) (MMAP_GPIO);
 	csctrl_t *csctrl = (csctrl_t *) (MMAP_FBCS);
@@ -390,7 +390,7 @@ void cpu_init_f(void)
 	out_be32(&csctrl->cs_or7, CONFIG_SYS_OR7_PRELIM);
 #endif
 
-#endif				/* #ifndef CONFIG_MONITOR_IS_IN_RAM */
+#endif				/* #ifndef CFG_MONITOR_IS_IN_RAM */
 
 	/* enable instruction cache now */
 	icache_enable();
@@ -460,7 +460,7 @@ void cpu_init_f(void)
 	 * already initialized.
 	 */
 
-#ifndef CONFIG_MONITOR_IS_IN_RAM
+#ifndef CFG_MONITOR_IS_IN_RAM
 	wdog_t *wdog_reg = (wdog_t *) (MMAP_WDOG);
 	gpio_t *gpio_reg = (gpio_t *) (MMAP_GPIO);
 
@@ -469,7 +469,7 @@ void cpu_init_f(void)
 
 	/* FlexBus Chipselect */
 	init_fbcs();
-#endif				/* #ifndef CONFIG_MONITOR_IS_IN_RAM */
+#endif				/* #ifndef CFG_MONITOR_IS_IN_RAM */
 
 #ifdef CONFIG_SYS_I2C_FSL
 	CFG_SYS_I2C_PINMUX_REG &= CFG_SYS_I2C_PINMUX_CLR;
@@ -557,7 +557,7 @@ void cpu_init_f(void)
 	MCFWTM_WCR = 0;
 #endif
 
-#ifndef CONFIG_MONITOR_IS_IN_RAM
+#ifndef CFG_MONITOR_IS_IN_RAM
 	/* Set speed /PLL */
 	MCFCLOCK_SYNCR =
 	    MCFCLOCK_SYNCR_MFD(CFG_SYS_MFD) |
@@ -614,7 +614,7 @@ void cpu_init_f(void)
 	/* FlexBus Chipselect */
 	init_fbcs();
 
-#endif				/* CONFIG_MONITOR_IS_IN_RAM */
+#endif				/* CFG_MONITOR_IS_IN_RAM */
 
 	/* defer enabling cache until boot (see do_go) */
 	/* icache_enable(); */

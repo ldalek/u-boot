@@ -25,7 +25,7 @@
 /* If we come from a pre-loader we don't need an initial exception
  * table.
  */
-#if !defined(CONFIG_MONITOR_IS_IN_RAM)
+#if !defined(CFG_MONITOR_IS_IN_RAM)
 
 .text
 
@@ -164,7 +164,7 @@ _after_flashbar_copy:
 	 * if we come from a pre-loader we have no exception table and
 	 * therefore no VBR to set
 	 */
-#if !defined(CONFIG_MONITOR_IS_IN_RAM)
+#if !defined(CFG_MONITOR_IS_IN_RAM)
 #if defined(CONFIG_M5282) && (CONFIG_TEXT_BASE == CFG_SYS_INT_FLASH_BASE)
 	move.l	#CFG_SYS_INT_FLASH_BASE, %d0
 #else

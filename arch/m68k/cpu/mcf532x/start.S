@@ -24,7 +24,7 @@
 	addl	#60,%sp;		/* space for 15 regs */ \
 	rte;
 
-#if !defined(CONFIG_MONITOR_IS_IN_RAM)
+#if !defined(CFG_MONITOR_IS_IN_RAM)
 
 .text
 
@@ -86,7 +86,7 @@ vector192_255:
 .long	_FAULT, _FAULT, _FAULT, _FAULT, _FAULT, _FAULT, _FAULT, _FAULT
 .long	_FAULT, _FAULT, _FAULT, _FAULT, _FAULT, _FAULT, _FAULT, _FAULT
 .long	_FAULT, _FAULT, _FAULT, _FAULT, _FAULT, _FAULT, _FAULT, _FAULT
-#endif /* !defined(CONFIG_MONITOR_IS_IN_RAM) */
+#endif /* !defined(CFG_MONITOR_IS_IN_RAM) */
 
 .text
 
@@ -96,7 +96,7 @@ _start:
 	nop
 	move.w	#0x2700,%sr	/* Mask off Interrupt */
 
-#if !defined(CONFIG_MONITOR_IS_IN_RAM)
+#if !defined(CFG_MONITOR_IS_IN_RAM)
 	/* Set vector base register at the beginning of the Flash */
 	move.l	#CFG_SYS_FLASH_BASE, %d0
 	movec	%d0, %VBR

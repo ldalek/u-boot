@@ -27,7 +27,7 @@
 /* If we come from a pre-loader we don't need an initial exception
  * table.
  */
-#if !defined(CONFIG_MONITOR_IS_IN_RAM)
+#if !defined(CFG_MONITOR_IS_IN_RAM)
 
 .text
 
@@ -109,7 +109,7 @@ _start:
 	 * if we come from a pre-loader we have no exception table and
 	 * therefore no VBR to set
 	 */
-#if !defined(CONFIG_MONITOR_IS_IN_RAM)
+#if !defined(CFG_MONITOR_IS_IN_RAM)
 	move.l	#CFG_SYS_FLASH_BASE, %d0
 	movec	%d0, %VBR
 #endif
