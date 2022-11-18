@@ -16,7 +16,7 @@
 #define PHY_ANEG_TIMEOUT	8000
 
 /* Enable SPI NOR flash reset, needed for SPI booting */
-#define CONFIG_SPI_N25Q256A_RESET
+#define CFG_SPI_N25Q256A_RESET
 
 /* Environment setting for SPI flash */
 
