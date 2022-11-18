@@ -67,7 +67,7 @@
  * Physical Memory Map
  */
 #define PHYS_DRAM_1_SIZE		0x20000000	/* 512MB */
-#define CONFIG_MAX_RAM_BANK_SIZE	(1024 << 20)	/* 1024MB */
+#define CFG_MAX_RAM_BANK_SIZE	(1024 << 20)	/* 1024MB */
 
 #define CFG_SYS_SDRAM_BASE		0x80000000
 
