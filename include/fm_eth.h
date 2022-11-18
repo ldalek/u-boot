@@ -88,7 +88,7 @@ enum fm_eth_type {
 				offsetof(struct ccsr_fman, memac[n-1]),\
 }
 
-#ifdef CONFIG_FSL_FM_10GEC_REGULAR_NOTATION
+#ifdef CFG_FSL_FM_10GEC_REGULAR_NOTATION
 #define FM_TGEC_INFO_INITIALIZER(idx, n) \
 {									\
 	FM_ETH_INFO_INITIALIZER(idx, CONFIG_SYS_FM1_TGEC_MDIO_ADDR)	\

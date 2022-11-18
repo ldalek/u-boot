@@ -738,7 +738,7 @@ static int fm_eth_init_mac(struct fm_eth *fm_eth, struct ccsr_fman *reg)
 	num = fm_eth->num;
 
 #ifdef CONFIG_SYS_FMAN_V3
-#ifndef CONFIG_FSL_FM_10GEC_REGULAR_NOTATION
+#ifndef CFG_FSL_FM_10GEC_REGULAR_NOTATION
 	if (fm_eth->type == FM_ETH_10G_E) {
 		/* 10GEC1/10GEC2 use mEMAC9/mEMAC10 on T2080/T4240.
 		 * 10GEC3/10GEC4 use mEMAC1/mEMAC2 on T2080.

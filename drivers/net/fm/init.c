@@ -261,7 +261,7 @@ int ft_fixup_port(void *blob, struct fm_eth_info *info, char *prop)
 	}
 
 #ifdef CONFIG_SYS_FMAN_V3
-#ifndef CONFIG_FSL_FM_10GEC_REGULAR_NOTATION
+#ifndef CFG_FSL_FM_10GEC_REGULAR_NOTATION
 	/*
 	 * On T2/T4 SoCs, physically FM1_DTSEC9 and FM1_10GEC1 use the same
 	 * dual-role MAC, when FM1_10GEC1 is enabled and  FM1_DTSEC9
