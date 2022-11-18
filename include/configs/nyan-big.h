@@ -19,7 +19,7 @@
 #define CFG_SYS_NS16550_COM1		NV_PA_APB_UARTA_BASE
 
 /* SPI */
-#define CONFIG_SPI_FLASH_SIZE          (4 << 20)
+#define CFG_SPI_FLASH_SIZE          (4 << 20)
 
 #include "tegra-common-post.h"
 

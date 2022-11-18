@@ -24,7 +24,7 @@
 	func(DHCP, dhcp, na)
 
 /* Environment at end of QSPI, in the VER partition */
-#define CONFIG_SPI_FLASH_SIZE		(4 << 20)
+#define CFG_SPI_FLASH_SIZE		(4 << 20)
 
 #define BOARD_EXTRA_ENV_SETTINGS \
 	"preboot=if test -e mmc 1:1 /u-boot-preboot.scr; then " \
