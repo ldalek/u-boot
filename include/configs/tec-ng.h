@@ -10,7 +10,7 @@
 #include "tegra30-common.h"
 
 /* High-level configuration options */
-#define CONFIG_TEGRA_BOARD_STRING	"Avionic Design Tamonten™ NG Evaluation Carrier"
+#define CFG_TEGRA_BOARD_STRING	"Avionic Design Tamonten™ NG Evaluation Carrier"
 
 /* Board-specific serial config */
 #define CONFIG_TEGRA_ENABLE_UARTD

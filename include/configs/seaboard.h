@@ -12,7 +12,7 @@
 #include "tegra20-common.h"
 
 /* High-level configuration options */
-#define CONFIG_TEGRA_BOARD_STRING	"NVIDIA Seaboard"
+#define CFG_TEGRA_BOARD_STRING	"NVIDIA Seaboard"
 
 /* Board-specific serial config */
 #define CONFIG_TEGRA_ENABLE_UARTD

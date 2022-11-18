@@ -12,7 +12,7 @@
 #include "tegra20-common.h"
 
 /* High-level configuration options */
-#define CONFIG_TEGRA_BOARD_STRING	"Avionic Design Tamonten Evaluation Carrier"
+#define CFG_TEGRA_BOARD_STRING	"Avionic Design Tamonten Evaluation Carrier"
 
 /* Board-specific serial config */
 #define CONFIG_TEGRA_ENABLE_UARTD	/* UARTD: debug UART */

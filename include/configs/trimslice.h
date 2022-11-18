@@ -11,7 +11,7 @@
 #include "tegra20-common.h"
 
 /* High-level configuration options */
-#define CONFIG_TEGRA_BOARD_STRING	"Compulab Trimslice"
+#define CFG_TEGRA_BOARD_STRING	"Compulab Trimslice"
 
 /* Board-specific serial config */
 #define CONFIG_TEGRA_ENABLE_UARTA

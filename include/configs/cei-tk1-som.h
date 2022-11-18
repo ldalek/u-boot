@@ -16,7 +16,7 @@
 #include "tegra124-common.h"
 
 /* High-level configuration options */
-#define CONFIG_TEGRA_BOARD_STRING	"CEI tk1-som"
+#define CFG_TEGRA_BOARD_STRING	"CEI tk1-som"
 
 /* Board-specific serial config */
 #define CONFIG_TEGRA_ENABLE_UARTD

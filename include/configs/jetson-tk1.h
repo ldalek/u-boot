@@ -12,7 +12,7 @@
 #include "tegra124-common.h"
 
 /* High-level configuration options */
-#define CONFIG_TEGRA_BOARD_STRING	"NVIDIA Jetson TK1"
+#define CFG_TEGRA_BOARD_STRING	"NVIDIA Jetson TK1"
 
 /* Board-specific serial config */
 #define CONFIG_TEGRA_ENABLE_UARTD

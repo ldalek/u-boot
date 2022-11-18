@@ -11,7 +11,7 @@
 #include "tegra114-common.h"
 
 /* High-level configuration options */
-#define CONFIG_TEGRA_BOARD_STRING	"NVIDIA Dalmore"
+#define CFG_TEGRA_BOARD_STRING	"NVIDIA Dalmore"
 
 /* Board-specific serial config */
 #define CONFIG_TEGRA_ENABLE_UARTD

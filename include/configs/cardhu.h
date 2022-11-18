@@ -14,7 +14,7 @@
 #define CONFIG_TEGRA_VDD_CORE_TPS62361B_SET3
 
 /* High-level configuration options */
-#define CONFIG_TEGRA_BOARD_STRING	"NVIDIA Cardhu"
+#define CFG_TEGRA_BOARD_STRING	"NVIDIA Cardhu"
 
 #define BOARD_EXTRA_ENV_SETTINGS \
 	"board_name=cardhu-a04\0" \
