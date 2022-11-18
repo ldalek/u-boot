@@ -133,7 +133,7 @@
 #define CFG_SYS_FLASH_BANKS_LIST	{CFG_SYS_FLASH_BASE_PHYS + 0x8000000}
 
 /* define to use L1 as initial stack */
-#define CONFIG_L1_INIT_RAM
+#define CFG_L1_INIT_RAM
 #define CFG_SYS_INIT_RAM_ADDR	0xffd00000	/* Initial L1 address */
 #ifdef CONFIG_PHYS_64BIT
 #define CFG_SYS_INIT_RAM_ADDR_PHYS_HIGH 0xf
