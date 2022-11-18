@@ -536,7 +536,7 @@ static int sh_eth_phy_config_legacy(struct sh_eth_dev *eth)
 
 	phydev = phy_connect(
 			miiphy_get_dev_by_name(dev->name),
-			port_info->phy_addr, dev, CONFIG_SH_ETHER_PHY_MODE);
+			port_info->phy_addr, dev, CFG_SH_ETHER_PHY_MODE);
 	port_info->phydev = phydev;
 	phy_config(phydev);
 
