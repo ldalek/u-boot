@@ -140,7 +140,7 @@
 
 #define WML		0x2e044
 #define WML_WRITE	0x00010000
-#ifdef CONFIG_FSL_SDHC_V2_3
+#ifdef CFG_FSL_SDHC_V2_3
 #define WML_RD_WML_MAX		0x80
 #define WML_WR_WML_MAX		0x80
 #define WML_RD_WML_MAX_VAL	0x0
