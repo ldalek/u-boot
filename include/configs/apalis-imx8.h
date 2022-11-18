@@ -34,7 +34,7 @@
 #define BOOTENV_RUN_NET_USB_START ""
 
 /* Initial environment variables */
-#define CONFIG_EXTRA_ENV_SETTINGS \
+#define CFG_EXTRA_ENV_SETTINGS \
 	BOOTENV \
 	MEM_LAYOUT_ENV_SETTINGS \
 	"boot_file=Image\0" \

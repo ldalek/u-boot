@@ -20,7 +20,7 @@
 
 /* commands to include */
 
-#define CONFIG_EXTRA_ENV_SETTINGS \
+#define CFG_EXTRA_ENV_SETTINGS \
 	"loadaddr=0x80200000\0" \
 	"fdtaddr=0x80F80000\0" \
 	"rdaddr=0x81000000\0" \

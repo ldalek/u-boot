@@ -415,7 +415,7 @@ extern unsigned long get_sdram_size(void);
 #define CONFIG_ROOTPATH		"/opt/nfsroot"
 #define CONFIG_UBOOTPATH	u-boot.bin/* U-Boot image on TFTP server */
 
-#define	CONFIG_EXTRA_ENV_SETTINGS				\
+#define	CFG_EXTRA_ENV_SETTINGS				\
 	"hwconfig=" __stringify(CONFIG_DEF_HWCONFIG)  "\0"	\
 	"netdev=eth0\0"						\
 	"uboot=" __stringify(CONFIG_UBOOTPATH) "\0"		\

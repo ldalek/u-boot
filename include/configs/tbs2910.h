@@ -33,7 +33,7 @@
 #endif /* CONFIG_CMD_USB_MASS_STORAGE */
 #endif /* CONFIG_CMD_USB      */
 
-#define CONFIG_EXTRA_ENV_SETTINGS \
+#define CFG_EXTRA_ENV_SETTINGS \
 	BOOTENV \
 	"bootargs_mmc1=console=ttymxc0,115200 di0_primary console=tty1\0" \
 	"bootargs_mmc2=video=mxcfb0:dev=hdmi,1920x1080M@60 " \

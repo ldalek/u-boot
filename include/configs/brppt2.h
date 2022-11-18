@@ -26,7 +26,7 @@
 
 /* Environment */
 
-#define CONFIG_EXTRA_ENV_SETTINGS \
+#define CFG_EXTRA_ENV_SETTINGS \
 BUR_COMMON_ENV \
 "cfgaddr=0x106F0000\0" \
 "scraddr=0x10700000\0" \

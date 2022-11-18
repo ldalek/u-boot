@@ -335,7 +335,7 @@
 #define CONFIG_GATEWAYIP 192.168.1.1
 #define CONFIG_NETMASK	 255.255.255.0
 
-#define	CONFIG_EXTRA_ENV_SETTINGS		\
+#define	CFG_EXTRA_ENV_SETTINGS		\
 	"hwconfig=fsl_ddr:ecc=off\0"		\
 	"netdev=eth0\0"				\
 	"uboot=" __stringify(CONFIG_UBOOTPATH) "\0"	\

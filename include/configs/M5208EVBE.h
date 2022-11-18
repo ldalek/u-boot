@@ -25,7 +25,7 @@
 #endif				/* CONFIG_MCFFEC */
 
 #define CONFIG_HOSTNAME		"M5208EVBe"
-#define CONFIG_EXTRA_ENV_SETTINGS		\
+#define CFG_EXTRA_ENV_SETTINGS		\
 	"netdev=eth0\0"				\
 	"loadaddr=40010000\0"			\
 	"u-boot=u-boot.bin\0"			\

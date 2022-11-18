@@ -19,7 +19,7 @@
 
 #endif
 
-#define CONFIG_EXTRA_ENV_SETTINGS \
+#define CFG_EXTRA_ENV_SETTINGS \
 	"image=Image\0" \
 	"console=ttymxc0,115200\0" \
 	"fdt_addr=0x48000000\0" \

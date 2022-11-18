@@ -42,7 +42,7 @@
 #	define CONFIG_OVERWRITE_ETHADDR_ONCE
 #endif				/* FEC_ENET */
 
-#define CONFIG_EXTRA_ENV_SETTINGS		\
+#define CFG_EXTRA_ENV_SETTINGS		\
 	"netdev=eth0\0"				\
 	"loadaddr=10000\0"			\
 	"uboot=u-boot.bin\0"			\

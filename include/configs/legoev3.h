@@ -49,7 +49,7 @@
  */
 #define LINUX_BOOT_PARAM_ADDR	(PHYS_SDRAM_1 + 0x100)
 #define CONFIG_SETUP_INITRD_TAG
-#define CONFIG_EXTRA_ENV_SETTINGS \
+#define CFG_EXTRA_ENV_SETTINGS \
 	"bootenvfile=uEnv.txt\0" \
 	"fdtfile=da850-lego-ev3.dtb\0" \
 	"memsize=64M\0" \

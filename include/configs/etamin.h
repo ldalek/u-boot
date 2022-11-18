@@ -138,7 +138,7 @@
 #define ETAMIN_NAND_GPMC_CONFIG6	0x16000f80
 
 /* Default env settings */
-#define CONFIG_EXTRA_ENV_SETTINGS \
+#define CFG_EXTRA_ENV_SETTINGS \
 	"hostname=etamin\0" \
 	"ubi_off=4096\0"\
 	"nand_img_size=0x400000\0" \

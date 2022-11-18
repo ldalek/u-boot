@@ -231,7 +231,7 @@
 #define CONFIG_UBOOTPATH	"u-boot.bin"
 #define CONFIG_FDTFILE		"mpc8379_rdb.dtb"
 
-#define CONFIG_EXTRA_ENV_SETTINGS \
+#define CFG_EXTRA_ENV_SETTINGS \
 	"netdev=" CONFIG_NETDEV "\0"				\
 	"uboot=" CONFIG_UBOOTPATH "\0"					\
 	"tftpflash=tftp $loadaddr $uboot;"				\

@@ -37,7 +37,7 @@
 #define CONFIG_UBOOT_SECTOR_START	0x2
 #define CONFIG_UBOOT_SECTOR_COUNT	0x3fe
 
-#define CONFIG_EXTRA_ENV_SETTINGS \
+#define CFG_EXTRA_ENV_SETTINGS \
 	"script=boot.scr\0" \
 	"image=zImage\0" \
 	"console=ttymxc6\0" \
