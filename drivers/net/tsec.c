@@ -26,7 +26,7 @@
 /* Default initializations for TSEC controllers. */
 
 static struct tsec_info_struct tsec_info[] = {
-#ifdef CONFIG_TSEC1
+#ifdef CFG_TSEC1
 	STD_TSEC_INFO(1),	/* TSEC1 */
 #endif
 #ifdef CONFIG_TSEC2

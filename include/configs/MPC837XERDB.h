@@ -185,10 +185,10 @@
 
 #define CFG_GMII			/* MII PHY management */
 
-#define CONFIG_TSEC1
+#define CFG_TSEC1
 
-#ifdef CONFIG_TSEC1
-#define CONFIG_TSEC1_NAME		"TSEC0"
+#ifdef CFG_TSEC1
+#define CFG_TSEC1_NAME		"TSEC0"
 #define CFG_SYS_TSEC1_OFFSET		0x24000
 #define TSEC1_PHY_ADDR			2
 #define TSEC1_FLAGS			(TSEC_GIGABIT | TSEC_REDUCED)

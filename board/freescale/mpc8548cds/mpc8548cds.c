@@ -208,7 +208,7 @@ int board_eth_init(struct bd_info *bis)
 	struct tsec_info_struct tsec_info[4];
 	int num = 0;
 
-#ifdef CONFIG_TSEC1
+#ifdef CFG_TSEC1
 	SET_STD_TSEC_INFO(tsec_info[num], 1);
 	num++;
 #endif

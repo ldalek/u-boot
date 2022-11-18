@@ -296,7 +296,7 @@ static int pixis_set_sgmii(struct cmd_tbl *cmdtp, int flag, int argc,
 		which_tsec = simple_strtoul(argv[1], NULL, 0);
 
 	switch (which_tsec) {
-#ifdef CONFIG_TSEC1
+#ifdef CFG_TSEC1
 	case 1:
 		mask = PIXIS_VSPEED2_TSEC1SER;
 		switch_mask = PIXIS_VCFGEN1_TSEC1SER;

@@ -373,7 +373,7 @@ int board_eth_init(struct bd_info *bis)
 		(void *)(CFG_SYS_MPC85xx_GUTS_ADDR);
 	int num = 0;
 
-#ifdef CONFIG_TSEC1
+#ifdef CFG_TSEC1
 	SET_STD_TSEC_INFO(tsec_info[num], 1);
 	num++;
 #endif
