@@ -71,8 +71,8 @@ const char default_environment[] = {
 #ifdef	CFG_GATEWAYIP
 	"gatewayip="	__stringify(CFG_GATEWAYIP)	"\0"
 #endif
-#ifdef	CONFIG_NETMASK
-	"netmask="	__stringify(CONFIG_NETMASK)	"\0"
+#ifdef	CFG_NETMASK
+	"netmask="	__stringify(CFG_NETMASK)	"\0"
 #endif
 #ifdef	CFG_HOSTNAME
 	"hostname="	CFG_HOSTNAME	"\0"

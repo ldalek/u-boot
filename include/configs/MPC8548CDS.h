@@ -333,7 +333,7 @@
 
 #define CONFIG_SERVERIP	 192.168.1.1
 #define CFG_GATEWAYIP 192.168.1.1
-#define CONFIG_NETMASK	 255.255.255.0
+#define CFG_NETMASK	 255.255.255.0
 
 #define	CFG_EXTRA_ENV_SETTINGS		\
 	"hwconfig=fsl_ddr:ecc=off\0"		\

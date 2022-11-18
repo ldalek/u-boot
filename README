@@ -758,7 +758,7 @@ The following options need to be configured:
 		(Environment variable "gatewayip")
 
 - Subnet mask:
-		CONFIG_NETMASK
+		CFG_NETMASK
 
 		Defines a default value for the subnet mask (or
 		routing prefix) which is used to determine if an IP

@@ -49,7 +49,7 @@
 #define CONFIG_SERVERIP			192.168.11.1
 #define CFG_IPADDR			192.168.11.10
 #define CFG_GATEWAYIP		192.168.11.1
-#define CONFIG_NETMASK			255.255.255.0
+#define CFG_NETMASK			255.255.255.0
 
 #if defined(CONFIG_ARM64)
 /* ARM Trusted Firmware */
