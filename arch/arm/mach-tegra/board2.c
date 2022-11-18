@@ -125,7 +125,7 @@ int board_init(void)
 
 	tegra_gpu_config();
 
-#ifdef CONFIG_TEGRA_SPI
+#ifdef CFG_TEGRA_SPI
 	pin_mux_spi();
 #endif
 
