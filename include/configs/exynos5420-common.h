@@ -8,7 +8,7 @@
 #ifndef __CONFIG_EXYNOS5420_H
 #define __CONFIG_EXYNOS5420_H
 
-#define CONFIG_VAR_SIZE_SPL
+#define CFG_VAR_SIZE_SPL
 
 #define CFG_IRAM_TOP			0x02074000
 
