@@ -8,7 +8,7 @@
 
 #define CFG_HOSTNAME			"SELI8"
 
-#define CONFIG_KM_UBI_PARTITION_NAME_BOOT	"ubi0"
+#define CFG_KM_UBI_PARTITION_NAME_BOOT	"ubi0"
 #define CFG_KM_UBI_PARTITION_NAME_APP	"ubi1"
 
 /* PAXK FPGA Definitions */

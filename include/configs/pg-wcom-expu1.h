@@ -9,7 +9,7 @@
 #define WCOM_EXPU1
 #define CFG_HOSTNAME				"EXPU1"
 
-#define CONFIG_KM_UBI_PARTITION_NAME_BOOT	"ubi0"
+#define CFG_KM_UBI_PARTITION_NAME_BOOT	"ubi0"
 #define CFG_KM_UBI_PARTITION_NAME_APP	"ubi1"
 
 /* CLIPS FPGA Definitions */
