@@ -14,7 +14,7 @@
 #include <asm/mach-imx/gpio.h>
 
 /* Timer settings */
-#define CONFIG_MXC_GPT_HCLK
+#define CFG_MXC_GPT_HCLK
 #define CONFIG_SC_TIMER_CLK 8000000 /* 8Mhz */
 
 /* Miscellaneous configurable options */

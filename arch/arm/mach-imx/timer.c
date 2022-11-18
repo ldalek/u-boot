@@ -54,7 +54,7 @@ static inline int gpt_has_clk_source_osc(void)
 
 static inline ulong gpt_get_clk(void)
 {
-#ifdef CONFIG_MXC_GPT_HCLK
+#ifdef CFG_MXC_GPT_HCLK
 	if (gpt_has_clk_source_osc())
 		return MXC_HCLK >> 3;
 	else
@@ -78,7 +78,7 @@ int timer_init(void)
 	i = __raw_readl(&cur_gpt->control);
 	i &= ~GPTCR_CLKSOURCE_MASK;
 
-#ifdef CONFIG_MXC_GPT_HCLK
+#ifdef CFG_MXC_GPT_HCLK
 	if (gpt_has_clk_source_osc()) {
 		i |= GPTCR_CLKSOURCE_OSC | GPTCR_TEN;
 

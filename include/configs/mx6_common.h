@@ -16,7 +16,7 @@
 #endif
 
 #endif
-#define CONFIG_MXC_GPT_HCLK
+#define CFG_MXC_GPT_HCLK
 
 #include <linux/sizes.h>
 #include <asm/arch/imx-regs.h>
