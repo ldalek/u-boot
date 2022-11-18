@@ -497,7 +497,7 @@ int board_eth_init(struct bd_info *bis)
 	SET_STD_TSEC_INFO(tsec_info[num], 2);
 	num++;
 #endif
-#ifdef CONFIG_TSEC3
+#ifdef CFG_TSEC3
 	/* P1014 and it's derivatives do not support eTSEC3 */
 	if (cpu->soc_ver != SVR_P1014) {
 		SET_STD_TSEC_INFO(tsec_info[num], 3);

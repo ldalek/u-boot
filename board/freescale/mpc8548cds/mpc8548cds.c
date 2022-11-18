@@ -216,7 +216,7 @@ int board_eth_init(struct bd_info *bis)
 	SET_STD_TSEC_INFO(tsec_info[num], 2);
 	num++;
 #endif
-#ifdef CONFIG_TSEC3
+#ifdef CFG_TSEC3
 	/* initialize TSEC3 only if Carrier is 1.3 or above on CDS */
 	if (get_board_version() >= 0x13) {
 		SET_STD_TSEC_INFO(tsec_info[num], 3);

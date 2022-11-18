@@ -257,8 +257,8 @@
 #define CFG_TSEC1_NAME		"eTSEC1"
 #define CFG_TSEC2			1
 #define CFG_TSEC2_NAME		"eTSEC2"
-#define CONFIG_TSEC3			1
-#define CONFIG_TSEC3_NAME		"eTSEC3"
+#define CFG_TSEC3			1
+#define CFG_TSEC3_NAME		"eTSEC3"
 
 #define TSEC1_PHY_ADDR			1
 #define TSEC2_PHY_ADDR			2

@@ -308,7 +308,7 @@ static int pixis_set_sgmii(struct cmd_tbl *cmdtp, int flag, int argc,
 		switch_mask = PIXIS_VCFGEN1_TSEC2SER;
 		break;
 #endif
-#ifdef CONFIG_TSEC3
+#ifdef CFG_TSEC3
 	case 3:
 		mask = PIXIS_VSPEED2_TSEC3SER;
 		switch_mask = PIXIS_VCFGEN1_TSEC3SER;
