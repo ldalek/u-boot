@@ -1292,7 +1292,7 @@ void flash_print_info(flash_info_t *info)
  * effect updates to digit and dots.  Repeated code is nasty too, so
  * we define it once here.
  */
-#ifdef CONFIG_FLASH_SHOW_PROGRESS
+#ifdef CFG_FLASH_SHOW_PROGRESS
 #define FLASH_SHOW_PROGRESS(scale, dots, digit, dots_sub) \
 	if (flash_verbose) { \
 		dots -= dots_sub; \
@@ -1325,17 +1325,17 @@ int write_buff(flash_info_t *info, uchar *src, ulong addr, ulong cnt)
 #ifdef CONFIG_SYS_FLASH_USE_BUFFER_WRITE
 	int buffered_size;
 #endif
-#ifdef CONFIG_FLASH_SHOW_PROGRESS
-	int digit = CONFIG_FLASH_SHOW_PROGRESS;
+#ifdef CFG_FLASH_SHOW_PROGRESS
+	int digit = CFG_FLASH_SHOW_PROGRESS;
 	int scale = 0;
 	int dots  = 0;
 
 	/*
-	 * Suppress if there are fewer than CONFIG_FLASH_SHOW_PROGRESS writes.
+	 * Suppress if there are fewer than CFG_FLASH_SHOW_PROGRESS writes.
 	 */
-	if (cnt >= CONFIG_FLASH_SHOW_PROGRESS) {
-		scale = (int)((cnt + CONFIG_FLASH_SHOW_PROGRESS - 1) /
-			CONFIG_FLASH_SHOW_PROGRESS);
+	if (cnt >= CFG_FLASH_SHOW_PROGRESS) {
+		scale = (int)((cnt + CFG_FLASH_SHOW_PROGRESS - 1) /
+			CFG_FLASH_SHOW_PROGRESS);
 	}
 #endif
 

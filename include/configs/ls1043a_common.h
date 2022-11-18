@@ -92,7 +92,7 @@
 #define CFG_SYS_FLASH_BASE_PHYS_EARLY	0x00000000
 
 #ifdef CONFIG_MTD_NOR_FLASH
-#define CONFIG_FLASH_SHOW_PROGRESS	45	/* count down from 45/5: 9..1 */
+#define CFG_FLASH_SHOW_PROGRESS	45	/* count down from 45/5: 9..1 */
 #endif
 #endif
 #endif
