@@ -69,7 +69,7 @@ struct fsl_secboot_img_hdr {
 #define MAX_KEY_ENTRIES 8
 #endif
 
-#if defined(CONFIG_FSL_ISBC_KEY_EXT)
+#if defined(CFG_FSL_ISBC_KEY_EXT)
 #define IE_FLAG_MASK 0x1
 #define SCRATCH_IE_LOW_ADR 13
 #define SCRATCH_IE_HIGH_ADR 14
@@ -155,14 +155,14 @@ struct fsl_secboot_img_hdr {
 #define MAX_KEY_ENTRIES 4
 #endif
 
-#if defined(CONFIG_FSL_ISBC_KEY_EXT)
+#if defined(CFG_FSL_ISBC_KEY_EXT)
 #define IE_FLAG_MASK 0xFFFFFFFF
 #endif
 
 #endif /* CONFIG_ESBC_HDR_LS */
 
 
-#if defined(CONFIG_FSL_ISBC_KEY_EXT)
+#if defined(CFG_FSL_ISBC_KEY_EXT)
 struct ie_key_table {
 	u32 key_len;
 	u8 pkey[2 * KEY_SIZE_BYTES];
@@ -217,7 +217,7 @@ struct fsl_secboot_sg_table {
  * IE Table
  */
 struct fsl_secboot_glb {
-#if defined(CONFIG_FSL_ISBC_KEY_EXT)
+#if defined(CFG_FSL_ISBC_KEY_EXT)
 	uintptr_t ie_addr;
 	struct ie_key_info ie_tbl;
 #endif

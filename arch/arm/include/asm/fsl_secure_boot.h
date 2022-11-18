@@ -20,7 +20,7 @@
  * is copied to XIP memory
  * Also, for LS, ISBC doesn't verify this table.
  */
-#define CONFIG_FSL_ISBC_KEY_EXT
+#define CFG_FSL_ISBC_KEY_EXT
 
 #endif
 

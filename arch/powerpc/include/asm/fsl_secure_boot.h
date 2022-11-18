@@ -51,7 +51,7 @@
  * The feature is only applicable in case of NOR boot and is
  * not applicable in case of RAMBOOT (NAND, SD, SPI).
  */
-#define CONFIG_FSL_ISBC_KEY_EXT
+#define CFG_FSL_ISBC_KEY_EXT
 #endif
 #endif /* #ifdef CONFIG_NXP_ESBC */
 
