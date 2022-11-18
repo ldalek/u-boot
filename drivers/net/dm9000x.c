@@ -550,7 +550,7 @@ static int dm9000_recv_common(struct dm9000_priv *db, uchar *rdptr)
 /*
  * Read a word data from SROM
  */
-#if !defined(CONFIG_DM9000_NO_SROM)
+#if !defined(CFG_DM9000_NO_SROM)
 static void dm9000_read_srom_word(struct dm9000_priv *db, int offset, u8 *to)
 {
 	dm9000_iow(db, DM9000_EPAR, offset);
