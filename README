@@ -1477,7 +1477,7 @@ Configuration Settings:
 - CONFIG_SYS_FLASH_USE_BUFFER_WRITE
 		Use buffered writes to flash.
 
-- CONFIG_FLASH_SPANSION_S29WS_N
+- CFG_FLASH_SPANSION_S29WS_N
 		s29ws-n MirrorBit flash has non-standard addresses for buffered
 		write commands.
 

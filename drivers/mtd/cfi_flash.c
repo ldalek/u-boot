@@ -991,7 +991,7 @@ static int flash_write_cfibuffer(flash_info_t *info, ulong dest, uchar *cp,
 	case CFI_CMDSET_AMD_EXTENDED:
 		flash_unlock_seq(info, sector);
 
-#ifdef CONFIG_FLASH_SPANSION_S29WS_N
+#ifdef CFG_FLASH_SPANSION_S29WS_N
 		offset = ((unsigned long)dst - info->start[sector]) >> shift;
 #endif
 		flash_write_cmd(info, sector, offset, AMD_CMD_WRITE_TO_BUFFER);
