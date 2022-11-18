@@ -25,7 +25,7 @@
 	addl	#60,%sp;		/* space for 15 regs */ \
 	rte;
 
-#if defined(CONFIG_SERIAL_BOOT)
+#if defined(CFG_SERIAL_BOOT)
 #define ASM_DRAMINIT	(asm_dram_init - CONFIG_TEXT_BASE + \
 	CFG_SYS_INIT_RAM_ADDR)
 #define ASM_DRAMINIT_N	(asm_dram_init - CONFIG_TEXT_BASE)
@@ -40,7 +40,7 @@
  * These vectors are to catch any un-intended traps.
  */
 _vectors:
-#if defined(CONFIG_SERIAL_BOOT)
+#if defined(CFG_SERIAL_BOOT)
 
 INITSP:	.long	0			/* Initial SP	*/
 #ifdef CONFIG_CF_SBF
@@ -68,7 +68,7 @@ vector10_17:
 vector18_1F:
 .long	_FAULT, _FAULT, _FAULT, _FAULT, _FAULT, _FAULT, _FAULT, _FAULT
 
-#if !defined(CONFIG_SERIAL_BOOT)
+#if !defined(CFG_SERIAL_BOOT)
 
 /* TRAP #0 - #15 */
 vector20_2F:
@@ -111,7 +111,7 @@ vector192_255:
 .long	_FAULT, _FAULT, _FAULT, _FAULT, _FAULT, _FAULT, _FAULT, _FAULT
 #endif
 
-#if defined(CONFIG_SERIAL_BOOT)
+#if defined(CFG_SERIAL_BOOT)
 	/* Image header: chksum 4 bytes, len 4 bytes, img dest 4 bytes */
 asm_sbf_img_hdr:
 	.long	0x00000000		/* checksum, not yet implemented */
@@ -436,7 +436,7 @@ asm_delay:
 	. = 0x400
 .globl _start
 _start:
-#if !defined(CONFIG_SERIAL_BOOT)
+#if !defined(CFG_SERIAL_BOOT)
 	nop
 	nop
 	move.w	#0x2700,%sr		/* Mask off Interrupt */

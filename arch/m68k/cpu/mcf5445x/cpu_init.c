@@ -28,7 +28,7 @@ void init_fbcs(void)
 {
 	fbcs_t *fbcs __maybe_unused = (fbcs_t *) MMAP_FBCS;
 
-#if !defined(CONFIG_SERIAL_BOOT)
+#if !defined(CFG_SERIAL_BOOT)
 #if (defined(CFG_SYS_CS0_BASE) && defined(CFG_SYS_CS0_MASK) && defined(CFG_SYS_CS0_CTRL))
 	out_be32(&fbcs->csar0, CFG_SYS_CS0_BASE);
 	out_be32(&fbcs->cscr0, CFG_SYS_CS0_CTRL);

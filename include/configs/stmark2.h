@@ -64,7 +64,7 @@
 #define CFG_SYS_DRAM_TEST
 
 #if defined(CONFIG_CF_SBF)
-#define CONFIG_SERIAL_BOOT
+#define CFG_SERIAL_BOOT
 #endif
 
 /* Reserve 256 kB for Monitor */
