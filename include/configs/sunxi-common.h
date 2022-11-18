@@ -77,7 +77,7 @@
  */
 
 /* standalone support */
-#define CONFIG_STANDALONE_LOAD_ADDR	CONFIG_SYS_LOAD_ADDR
+#define CFG_STANDALONE_LOAD_ADDR	CONFIG_SYS_LOAD_ADDR
 
 /* FLASH and environment organization */
 

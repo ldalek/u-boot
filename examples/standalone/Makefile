@@ -42,7 +42,7 @@ endif
 # source file.
 ccflags-y += $(call cc-option,-fno-toplevel-reorder)
 
-LDFLAGS_STANDALONE	+= -Ttext $(CONFIG_STANDALONE_LOAD_ADDR)
+LDFLAGS_STANDALONE	+= -Ttext $(CFG_STANDALONE_LOAD_ADDR)
 
 #########################################################################
 

@@ -23,4 +23,4 @@ PLATFORM_RELFLAGS += -ffunction-sections -fdata-sections -fno-common
 LDFLAGS_FINAL += -pie --gc-sections
 
 # Load address for standalone apps
-CONFIG_STANDALONE_LOAD_ADDR ?= 0x82000000
+CFG_STANDALONE_LOAD_ADDR ?= 0x82000000

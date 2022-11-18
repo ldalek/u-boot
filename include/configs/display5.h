@@ -279,7 +279,7 @@
 
 /* Miscellaneous configurable options */
 
-#define CONFIG_STANDALONE_LOAD_ADDR	0x10001000
+#define CFG_STANDALONE_LOAD_ADDR	0x10001000
 
 /* Physical Memory Map */
 #define PHYS_SDRAM			MMDC0_ARB_BASE_ADDR

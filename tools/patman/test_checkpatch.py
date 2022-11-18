@@ -205,7 +205,7 @@ index 6f3748d..f9e4e65 100644
 +		You can add calls to bootstage_mark() to set time markers.
 +
  - Standalone program support:
- 		CONFIG_STANDALONE_LOAD_ADDR
+ 		CFG_STANDALONE_LOAD_ADDR
 
 diff --git a/MAINTAINERS b/MAINTAINERS
 index b167b028ec..beb7dc634f 100644

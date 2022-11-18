@@ -4,7 +4,7 @@
 # Psyent Corporation <www.psyent.com>
 # Scott McNutt <smcnutt@psyent.com>
 
-CONFIG_STANDALONE_LOAD_ADDR ?= 0x02000000
+CFG_STANDALONE_LOAD_ADDR ?= 0x02000000
 
 PLATFORM_CPPFLAGS += -D__NIOS2__
 PLATFORM_CPPFLAGS += -G0

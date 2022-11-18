@@ -1224,7 +1224,7 @@ The following options need to be configured:
 		this is instead controlled by the value of
 		/config/load-environment.
 
-		CONFIG_STANDALONE_LOAD_ADDR
+		CFG_STANDALONE_LOAD_ADDR
 
 		This option defines a board specific value for the
 		address where standalone program gets loaded, thus
