@@ -288,7 +288,7 @@
 #define CFG_SYS_I2C_RTC_ADDR         0x68
 
 /*DVI encoder*/
-#define CONFIG_HDMI_ENCODER_I2C_ADDR  0x75
+#define CFG_HDMI_ENCODER_I2C_ADDR  0x75
 #endif
 
 /*
