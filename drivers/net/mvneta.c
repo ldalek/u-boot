@@ -192,7 +192,7 @@ DECLARE_GLOBAL_DATA_PTR;
 #define      MVNETA_GMAC_FORCE_LINK_PASS         BIT(1)
 #define      MVNETA_GMAC_IB_BYPASS_AN_EN         BIT(3)
 #define      MVNETA_GMAC_CONFIG_MII_SPEED        BIT(5)
-#define      MVNETA_GMAC_CONFIG_GMII_SPEED       BIT(6)
+#define      MVNETA_GMAC_CFG_GMII_SPEED       BIT(6)
 #define      MVNETA_GMAC_AN_SPEED_EN             BIT(7)
 #define      MVNETA_GMAC_SET_FC_EN               BIT(8)
 #define      MVNETA_GMAC_ADVERT_FC_EN            BIT(9)
@@ -1163,7 +1163,7 @@ static void mvneta_adjust_link(struct udevice *dev)
 
 		val = mvreg_read(pp, MVNETA_GMAC_AUTONEG_CONFIG);
 		val &= ~(MVNETA_GMAC_CONFIG_MII_SPEED |
-			 MVNETA_GMAC_CONFIG_GMII_SPEED |
+			 MVNETA_GMAC_CFG_GMII_SPEED |
 			 MVNETA_GMAC_CONFIG_FULL_DUPLEX |
 			 MVNETA_GMAC_AN_SPEED_EN |
 			 MVNETA_GMAC_AN_DUPLEX_EN);
@@ -1187,7 +1187,7 @@ static void mvneta_adjust_link(struct udevice *dev)
 			val |= MVNETA_GMAC_CONFIG_FULL_DUPLEX;
 
 		if (phydev->speed == SPEED_1000)
-			val |= MVNETA_GMAC_CONFIG_GMII_SPEED;
+			val |= MVNETA_GMAC_CFG_GMII_SPEED;
 		else if (pp->speed == SPEED_100)
 			val |= MVNETA_GMAC_CONFIG_MII_SPEED;
 

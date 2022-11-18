@@ -183,7 +183,7 @@
  */
 #ifdef CONFIG_TSEC_ENET
 
-#define CONFIG_GMII			/* MII PHY management */
+#define CFG_GMII			/* MII PHY management */
 
 #define CONFIG_TSEC1
 
