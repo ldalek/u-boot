@@ -9,7 +9,7 @@
 /*
  * System configuration
  */
-#define CONFIG_MALTA
+#define CFG_MALTA
 
 #define CONFIG_MEMSIZE_IN_BYTES
 
