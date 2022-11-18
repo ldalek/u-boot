@@ -24,18 +24,18 @@
 
 #elif defined(CONFIG_ARCH_P1010)
 #define CFG_FSL_SDHC_V2_3
-#define CONFIG_TSECV2
+#define CFG_TSECV2
 #define CONFIG_SYS_FSL_IFC_BANK_COUNT	4
 
 /* P1011 is single core version of P1020 */
 #elif defined(CONFIG_ARCH_P1011)
-#define CONFIG_TSECV2
+#define CFG_TSECV2
 
 #elif defined(CONFIG_ARCH_P1020)
-#define CONFIG_TSECV2
+#define CFG_TSECV2
 
 #elif defined(CONFIG_ARCH_P1021)
-#define CONFIG_TSECV2
+#define CFG_TSECV2
 #define QE_MURAM_SIZE			0x6000UL
 #define MAX_QE_RISC			1
 #define QE_NUM_OF_SNUM			28
@@ -49,11 +49,11 @@
 
 /* P1024 is lower end variant of P1020 */
 #elif defined(CONFIG_ARCH_P1024)
-#define CONFIG_TSECV2
+#define CFG_TSECV2
 
 /* P1025 is lower end variant of P1021 */
 #elif defined(CONFIG_ARCH_P1025)
-#define CONFIG_TSECV2
+#define CFG_TSECV2
 #define QE_MURAM_SIZE			0x6000UL
 #define MAX_QE_RISC			1
 #define QE_NUM_OF_SNUM			28
@@ -108,12 +108,12 @@
 
 #elif defined(CONFIG_ARCH_BSC9131)
 #define CFG_FSL_SDHC_V2_3
-#define CONFIG_TSECV2
+#define CFG_TSECV2
 #define CONFIG_SYS_FSL_IFC_BANK_COUNT	3
 
 #elif defined(CONFIG_ARCH_BSC9132)
 #define CFG_FSL_SDHC_V2_3
-#define CONFIG_TSECV2
+#define CFG_TSECV2
 #define CONFIG_SYS_FSL_IFC_BANK_COUNT	3
 
 #elif defined(CONFIG_ARCH_T4240)
@@ -221,7 +221,7 @@
 
 #elif defined(CONFIG_ARCH_C29X)
 #define CFG_FSL_SDHC_V2_3
-#define CONFIG_TSECV2_1
+#define CFG_TSECV2_1
 #define CONFIG_SYS_FSL_IFC_BANK_COUNT	8
 #define CFG_SYS_FSL_SEC_IDX_OFFSET	0x20000
 
