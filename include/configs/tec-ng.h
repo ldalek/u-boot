@@ -19,7 +19,7 @@
 /* Environment in eMMC, at the end of 2nd "boot sector" */
 
 /* SPI */
-#define CONFIG_TEGRA_SLINK_CTRLS       6
+#define CFG_TEGRA_SLINK_CTRLS       6
 #define CFG_SPI_FLASH_SIZE          (4 << 20)
 
 #include "tegra-common-post.h"
