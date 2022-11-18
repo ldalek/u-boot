@@ -34,7 +34,7 @@
 #define CFG_FEC_ENET_DEV		0
 #define CFG_FEC_MXC_PHYADDR          0x0
 
-#define CONFIG_UBOOT_SECTOR_START	0x2
+#define CFG_UBOOT_SECTOR_START	0x2
 #define CFG_UBOOT_SECTOR_COUNT	0x3fe
 
 #define CFG_EXTRA_ENV_SETTINGS \
@@ -75,7 +75,7 @@
 			"bootz; " \
 		"fi;\0" \
 	"uboot=ccv/u-boot.imx\0"					\
-	"uboot_start="__stringify(CONFIG_UBOOT_SECTOR_START)"\0"	\
+	"uboot_start="__stringify(CFG_UBOOT_SECTOR_START)"\0"	\
 	"uboot_size="__stringify(CFG_UBOOT_SECTOR_COUNT)"\0"		\
 	"update_uboot=if tftp ${uboot}; then "				\
 		"if itest ${filesize} > 0; then "			\
