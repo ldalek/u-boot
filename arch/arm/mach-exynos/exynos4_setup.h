@@ -434,7 +434,7 @@ struct mem_timings {
 /* Interleave_bit0: 0xC*/
 #define APB_SFR_INTERLEAVE_CONF_VAL	0x0000000c
 #endif
-#ifdef CONFIG_MIU_2BIT_INTERLEAVED
+#ifdef CFG_MIU_2BIT_INTERLEAVED
 /* Interleave: 2Bit, Interleave_bit1: 0x15, Interleave_bit0: 0xc */
 #define APB_SFR_INTERLEAVE_CONF_VAL	0x2000150c
 #endif

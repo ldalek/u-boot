@@ -35,7 +35,7 @@
 /* FLASH and environment organization */
 
 /* MIU (Memory Interleaving Unit) */
-#define CONFIG_MIU_2BIT_INTERLEAVED
+#define CFG_MIU_2BIT_INTERLEAVED
 
 #define RESERVE_BLOCK_SIZE		(512)
 #define BL1_SIZE			(16 << 10) /*16 K reserved for BL1*/
