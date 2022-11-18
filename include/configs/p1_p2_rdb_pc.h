@@ -462,7 +462,7 @@ RST_PCIE_CMD(pciboot) \
 RST_DEF_CMD(defboot) \
 ""
 
-#define CONFIG_USB_FAT_BOOT	\
+#define CFG_USB_FAT_BOOT	\
 "setenv bootargs root=/dev/ram rw "	\
 "console=$consoledev,$baudrate $othbootargs " \
 "ramdisk_size=$ramdisk_size;"	\
