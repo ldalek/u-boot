@@ -32,7 +32,7 @@
 #define CONFIG_MXC_USB_FLAGS		0
 
 #define CFG_FEC_ENET_DEV		0
-#define CONFIG_FEC_MXC_PHYADDR          0x0
+#define CFG_FEC_MXC_PHYADDR          0x0
 
 #define CONFIG_UBOOT_SECTOR_START	0x2
 #define CONFIG_UBOOT_SECTOR_COUNT	0x3fe
