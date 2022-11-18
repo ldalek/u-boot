@@ -88,7 +88,7 @@
 
 /* SPI */
 #ifdef CONFIG_CMD_SPI
-#define CONFIG_SPI_HALF_DUPLEX
+#define CFG_SPI_HALF_DUPLEX
 #endif
 
 #endif	/* __CONFIGS_MXS_H__ */
