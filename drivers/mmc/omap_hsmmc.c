@@ -1560,7 +1560,7 @@ int omap_mmc_init(int dev_index, uint host_caps_mask, uint f_max, int cd_gpio,
 #if (defined(CONFIG_OMAP44XX) || defined(CONFIG_OMAP54XX) || \
 	defined(CONFIG_DRA7XX) || defined(CONFIG_AM33XX) || \
 	defined(CONFIG_AM43XX) || defined(CONFIG_ARCH_KEYSTONE)) && \
-		defined(CONFIG_HSMMC2_8BIT)
+		defined(CFG_HSMMC2_8BIT)
 		/* Enable 8-bit interface for eMMC on OMAP4/5 or DRA7XX */
 		host_caps_val |= MMC_MODE_8BIT;
 #endif
