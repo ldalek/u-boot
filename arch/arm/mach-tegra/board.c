@@ -247,7 +247,7 @@ void board_init_uart_f(void)
 #ifdef CONFIG_TEGRA_ENABLE_UARTC
 	uart_ids |= UARTC;
 #endif
-#ifdef CONFIG_TEGRA_ENABLE_UARTD
+#ifdef CFG_TEGRA_ENABLE_UARTD
 	uart_ids |= UARTD;
 #endif
 #ifdef CONFIG_TEGRA_ENABLE_UARTE

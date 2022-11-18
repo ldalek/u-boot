@@ -19,7 +19,7 @@
 #define CFG_TEGRA_BOARD_STRING	"CEI tk1-som"
 
 /* Board-specific serial config */
-#define CONFIG_TEGRA_ENABLE_UARTD
+#define CFG_TEGRA_ENABLE_UARTD
 #define CFG_SYS_NS16550_COM1		NV_PA_APB_UARTD_BASE
 
 /* SPI */
