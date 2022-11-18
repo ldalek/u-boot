@@ -45,7 +45,7 @@
  *----------------------------------------------------------------------*/
 
 #ifdef CONFIG_MCFFEC
-#define CONFIG_OVERWRITE_ETHADDR_ONCE
+#define CFG_OVERWRITE_ETHADDR_ONCE
 #endif
 
 /*-------------------------------------------------------------------------
