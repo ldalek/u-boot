@@ -15,7 +15,7 @@
 #define PHYS_SDRAM_SIZE			(0x7c000000)	/* Default size (2GB - Secure memory) */
 
 #define CONFIG_VERY_BIG_RAM				/* SynQuacer supports up to 64GB */
-#define CONFIG_MAX_MEM_MAPPED		PHYS_SDRAM_SIZE
+#define CFG_MAX_MEM_MAPPED		PHYS_SDRAM_SIZE
 
 #define SQ_DRAMINFO_BASE		(0x2e00ffc0)	/* DRAM info from TF-A */
 

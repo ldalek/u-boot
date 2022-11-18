@@ -122,8 +122,8 @@ phys_size_t get_effective_memsize(void)
 		return gd->ram_size;
 
 	/* Limit stack to what we can reasonable map */
-	return ((gd->ram_size > CONFIG_MAX_MEM_MAPPED) ?
-		CONFIG_MAX_MEM_MAPPED : gd->ram_size);
+	return ((gd->ram_size > CFG_MAX_MEM_MAPPED) ?
+		CFG_MAX_MEM_MAPPED : gd->ram_size);
 }
 
 /**
