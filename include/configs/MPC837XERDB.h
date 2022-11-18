@@ -229,7 +229,7 @@
 #define CONFIG_ROOTPATH		"/nfsroot"
 				/* U-Boot image on TFTP server */
 #define CONFIG_UBOOTPATH	"u-boot.bin"
-#define CONFIG_FDTFILE		"mpc8379_rdb.dtb"
+#define CFG_FDTFILE		"mpc8379_rdb.dtb"
 
 #define CFG_EXTRA_ENV_SETTINGS \
 	"netdev=" CONFIG_NETDEV "\0"				\
@@ -246,7 +246,7 @@
 		"cmp.b $loadaddr " __stringify(CONFIG_TEXT_BASE)	\
 			" $filesize\0"	\
 	"fdtaddr=780000\0"						\
-	"fdtfile=" CONFIG_FDTFILE "\0"					\
+	"fdtfile=" CFG_FDTFILE "\0"					\
 	"ramdiskaddr=1000000\0"						\
 	"ramdiskfile=rootfs.ext2.gz.uboot\0"				\
 	"console=ttyS0\0"						\
