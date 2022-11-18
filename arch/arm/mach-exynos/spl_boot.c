@@ -94,7 +94,7 @@ static int config_branch_prediction(int set_cr_z)
 }
 #endif
 
-#ifdef CONFIG_SPI_BOOTING
+#ifdef CFG_SPI_BOOTING
 static void spi_rx_tx(struct exynos_spi *regs, int todo,
 			void *dinp, void const *doutp, int i)
 {
@@ -220,7 +220,7 @@ void copy_uboot_to_ram(void)
 
 	u32 (*copy_bl2)(u32 offset, u32 nblock, u32 dst) = NULL;
 	u32 offset = 0, size = 0;
-#ifdef CONFIG_SPI_BOOTING
+#ifdef CFG_SPI_BOOTING
 	struct spl_machine_param *param = spl_get_machine_params();
 #endif
 #ifdef CONFIG_SUPPORT_EMMC_BOOT
@@ -248,7 +248,7 @@ void copy_uboot_to_ram(void)
 		bootmode = get_boot_mode();
 
 	switch (bootmode) {
-#ifdef CONFIG_SPI_BOOTING
+#ifdef CFG_SPI_BOOTING
 	case BOOT_MODE_SERIAL:
 		/* Customised function to copy u-boot from SF */
 		exynos_spi_copy(param->uboot_size, CONFIG_TEXT_BASE);
