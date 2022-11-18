@@ -45,9 +45,9 @@
 #define CFG_HOSTNAME		"x86"
 #define CONFIG_RAMDISK_ADDR	0x4000000
 #if defined(CONFIG_GENERATE_ACPI_TABLE) || defined(CONFIG_EFI_STUB)
-#define CONFIG_OTHBOOTARGS	"othbootargs=\0"
+#define CFG_OTHBOOTARGS	"othbootargs=\0"
 #else
-#define CONFIG_OTHBOOTARGS	"othbootargs=acpi=off\0"
+#define CFG_OTHBOOTARGS	"othbootargs=acpi=off\0"
 #endif
 
 #if defined(CONFIG_DISTRO_DEFAULTS)
@@ -67,7 +67,7 @@
 	"pciconfighost=1\0"				\
 	"netdev=eth0\0"					\
 	"consoledev=ttyS0\0"				\
-	CONFIG_OTHBOOTARGS				\
+	CFG_OTHBOOTARGS				\
 	"scriptaddr=0x7000000\0"			\
 	"kernel_addr_r=0x1000000\0"			\
 	"ramdisk_addr_r=0x4000000\0"			\
