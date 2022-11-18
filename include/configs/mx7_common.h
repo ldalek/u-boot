@@ -15,7 +15,7 @@
 
 /* Timer settings */
 #define CFG_MXC_GPT_HCLK
-#define CONFIG_SC_TIMER_CLK 8000000 /* 8Mhz */
+#define CFG_SC_TIMER_CLK 8000000 /* 8Mhz */
 
 /* Miscellaneous configurable options */
 
