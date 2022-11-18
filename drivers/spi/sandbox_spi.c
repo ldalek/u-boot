@@ -90,7 +90,7 @@ static int sandbox_spi_xfer(struct udevice *slave, unsigned int bitlen,
 	busnum = dev_seq(bus);
 	cs = spi_chip_select(slave);
 	if (busnum >= CFG_SANDBOX_SPI_MAX_BUS ||
-	    cs >= CONFIG_SANDBOX_SPI_MAX_CS) {
+	    cs >= CFG_SANDBOX_SPI_MAX_CS) {
 		printf("%s: busnum=%u, cs=%u: out of range\n", __func__,
 		       busnum, cs);
 		return -ENOENT;

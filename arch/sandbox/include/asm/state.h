@@ -99,7 +99,7 @@ struct sandbox_state {
 
 	/* Pointer to information for each SPI bus/cs */
 	struct sandbox_spi_info spi[CFG_SANDBOX_SPI_MAX_BUS]
-					[CONFIG_SANDBOX_SPI_MAX_CS];
+					[CFG_SANDBOX_SPI_MAX_CS];
 
 	/* Information about Watchdog */
 	struct sandbox_wdt_info wdt;
