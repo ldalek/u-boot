@@ -78,7 +78,7 @@
 /*
  * DDR Setup
  */
-#define CONFIG_VERY_BIG_RAM
+#define CFG_VERY_BIG_RAM
 #define CFG_SYS_DDR_SDRAM_BASE	0x00000000
 #define CFG_SYS_SDRAM_BASE		CFG_SYS_DDR_SDRAM_BASE
 #define CFG_SYS_SDRAM_SIZE	2048	/* for fixed parameter use */

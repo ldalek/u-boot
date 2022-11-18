@@ -13,7 +13,7 @@
 
 #include <environment/ti/dfu.h>
 
-#define CONFIG_VERY_BIG_RAM
+#define CFG_VERY_BIG_RAM
 #define CFG_MAX_MEM_MAPPED		0x80000000
 
 #ifndef CONFIG_QSPI_BOOT

@@ -14,7 +14,7 @@
  * restricting used physical memory to the first 128MB.
  */
 #if XCHAL_HAVE_PTP_MMU
-#define CONFIG_VERY_BIG_RAM
+#define CFG_VERY_BIG_RAM
 #define CFG_MAX_MEM_MAPPED (128 << 20)
 #endif
 

@@ -118,7 +118,7 @@ int dram_init(void)
 
 phys_size_t get_effective_memsize(void)
 {
-	if (!IS_ENABLED(CONFIG_VERY_BIG_RAM))
+	if (!IS_ENABLED(CFG_VERY_BIG_RAM))
 		return gd->ram_size;
 
 	/* Limit stack to what we can reasonable map */
