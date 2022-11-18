@@ -78,7 +78,7 @@ void *get_irom_func(int index)
 	return (void *)*(u32 *)irom_ptr_table[index];
 }
 
-#ifdef CONFIG_USB_BOOTING
+#ifdef CFG_USB_BOOTING
 /*
  * Set/clear program flow prediction and return the previous state.
  */
@@ -227,7 +227,7 @@ void copy_uboot_to_ram(void)
 	u32 (*copy_bl2_from_emmc)(u32 nblock, u32 dst);
 	void (*end_bootop_from_emmc)(void);
 #endif
-#ifdef CONFIG_USB_BOOTING
+#ifdef CFG_USB_BOOTING
 	int is_cr_z_set;
 	unsigned int sec_boot_check;
 
@@ -271,7 +271,7 @@ void copy_uboot_to_ram(void)
 		end_bootop_from_emmc();
 		break;
 #endif
-#ifdef CONFIG_USB_BOOTING
+#ifdef CFG_USB_BOOTING
 	case BOOT_MODE_USB:
 		/*
 		 * iROM needs program flow prediction to be disabled
