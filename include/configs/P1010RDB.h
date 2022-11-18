@@ -412,7 +412,7 @@ extern unsigned long get_sdram_size(void);
  * Environment Configuration
  */
 
-#define CONFIG_ROOTPATH		"/opt/nfsroot"
+#define CFG_ROOTPATH		"/opt/nfsroot"
 #define CONFIG_UBOOTPATH	u-boot.bin/* U-Boot image on TFTP server */
 
 #define	CFG_EXTRA_ENV_SETTINGS				\

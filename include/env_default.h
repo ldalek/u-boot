@@ -65,8 +65,8 @@ const char default_environment[] = {
 #ifdef	CONFIG_PREBOOT
 	"preboot="	CONFIG_PREBOOT			"\0"
 #endif
-#ifdef	CONFIG_ROOTPATH
-	"rootpath="	CONFIG_ROOTPATH			"\0"
+#ifdef	CFG_ROOTPATH
+	"rootpath="	CFG_ROOTPATH			"\0"
 #endif
 #ifdef	CFG_GATEWAYIP
 	"gatewayip="	__stringify(CFG_GATEWAYIP)	"\0"

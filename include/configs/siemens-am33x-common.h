@@ -17,7 +17,7 @@
 
 /* commands to include */
 
-#define CONFIG_ROOTPATH		"/opt/eldk"
+#define CFG_ROOTPATH		"/opt/eldk"
 
 /* Clock Defines */
 #define V_OSCK				24000000  /* Clock output from T2 */

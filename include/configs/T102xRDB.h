@@ -423,7 +423,7 @@
 /*
  * Environment Configuration
  */
-#define CONFIG_ROOTPATH		"/opt/nfsroot"
+#define CFG_ROOTPATH		"/opt/nfsroot"
 #define CONFIG_UBOOTPATH	u-boot.bin /* U-Boot image on TFTP server */
 #define __USB_PHY_TYPE		utmi
 

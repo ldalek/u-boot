@@ -57,7 +57,7 @@
 
 /* TODO: Turn into string option and migrate to Kconfig */
 #define CFG_HOSTNAME		"gazerbeam"
-#define CONFIG_ROOTPATH		"/opt/nfsroot"
+#define CFG_ROOTPATH		"/opt/nfsroot"
 
 #define CFG_EXTRA_ENV_SETTINGS					\
 	"netdev=eth0\0"							\

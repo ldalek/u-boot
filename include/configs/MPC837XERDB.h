@@ -226,7 +226,7 @@
 #define CFG_NETDEV		"eth1"
 
 #define CFG_HOSTNAME		"mpc837x_rdb"
-#define CONFIG_ROOTPATH		"/nfsroot"
+#define CFG_ROOTPATH		"/nfsroot"
 				/* U-Boot image on TFTP server */
 #define CONFIG_UBOOTPATH	"u-boot.bin"
 #define CFG_FDTFILE		"mpc8379_rdb.dtb"

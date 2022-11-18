@@ -22,7 +22,7 @@
  */
 
 #define CFG_HOSTNAME		"ccdc"
-#define CONFIG_ROOTPATH		"/opt/nfsroot"
+#define CFG_ROOTPATH		"/opt/nfsroot"
 
 #define CFG_EXTRA_ENV_SETTINGS						\
 	"netdev=eth1\0"						\

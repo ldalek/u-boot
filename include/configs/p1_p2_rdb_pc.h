@@ -419,7 +419,7 @@
  * Environment Configuration
  */
 #define CFG_HOSTNAME		"unknown"
-#define CONFIG_ROOTPATH		"/opt/nfsroot"
+#define CFG_ROOTPATH		"/opt/nfsroot"
 #define CONFIG_UBOOTPATH	u-boot.bin /* U-Boot image on TFTP server */
 
 #include "p1_p2_bootsrc.h"

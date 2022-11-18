@@ -41,7 +41,7 @@
  */
 
 /* Default environment */
-#define CONFIG_ROOTPATH		"/opt/nfsroot"
+#define CFG_ROOTPATH		"/opt/nfsroot"
 #define CFG_HOSTNAME		"x86"
 #define CFG_RAMDISK_ADDR	0x4000000
 #if defined(CONFIG_GENERATE_ACPI_TABLE) || defined(CONFIG_EFI_STUB)

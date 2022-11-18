@@ -62,7 +62,7 @@
 	"third_image=u-boot.bin\0"
 #endif
 
-#define CONFIG_ROOTPATH			"/nfs/root/path"
+#define CFG_ROOTPATH			"/nfs/root/path"
 
 #ifdef CONFIG_FIT
 #define KERNEL_ADDR_R_OFFSET		"0x05100000"
