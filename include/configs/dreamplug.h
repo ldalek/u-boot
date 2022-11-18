@@ -28,6 +28,6 @@
  * Ethernet Driver configuration
  */
 #define CFG_MVGBE_PORTS	{1, 1}	/* enable both ports */
-#define CONFIG_PHY_BASE_ADR	0
+#define CFG_PHY_BASE_ADR	0
 
 #endif /* _CONFIG_DREAMPLUG_H */

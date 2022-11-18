@@ -12,8 +12,8 @@
 #define __MVGBE_H__
 
 /* PHY_BASE_ADR is board specific and can be configured */
-#if defined (CONFIG_PHY_BASE_ADR)
-#define PHY_BASE_ADR		CONFIG_PHY_BASE_ADR
+#if defined (CFG_PHY_BASE_ADR)
+#define PHY_BASE_ADR		CFG_PHY_BASE_ADR
 #else
 #define PHY_BASE_ADR		0x08	/* default phy base addr */
 #endif

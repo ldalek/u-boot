@@ -48,6 +48,6 @@
 
 /* Ethernet driver configuration */
 #define CFG_MVGBE_PORTS	{1, 0}	/* enable port 0 only */
-#define CONFIG_PHY_BASE_ADR	1
+#define CFG_PHY_BASE_ADR	1
 
 #endif /* _CONFIG_NSA310S_H */

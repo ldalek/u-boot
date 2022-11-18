@@ -40,7 +40,7 @@
  */
 #ifdef CONFIG_CMD_NET
 #define CFG_MVGBE_PORTS	{1, 0}	/* enable one port */
-#define CONFIG_PHY_BASE_ADR	8
+#define CFG_PHY_BASE_ADR	8
 #endif /* CONFIG_CMD_NET */
 
 #endif /* _CONFIG_DS109_H */

@@ -35,7 +35,7 @@
  */
 #ifdef CONFIG_CMD_NET
 #define CFG_MVGBE_PORTS	{1, 1}	/* enable both ports */
-#define CONFIG_PHY_BASE_ADR	0
+#define CFG_PHY_BASE_ADR	0
 #endif /* CONFIG_CMD_NET */
 
 #endif /* _CONFIG_GURUPLUG_H */

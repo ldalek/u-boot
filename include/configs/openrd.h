@@ -43,10 +43,10 @@
 #  define CFG_MVGBE_PORTS	{1, 1}	/* enable both ports */
 # endif
 # ifdef CONFIG_BOARD_IS_OPENRD_ULTIMATE
-#  define CONFIG_PHY_BASE_ADR	0x0
+#  define CFG_PHY_BASE_ADR	0x0
 #  define PHY_NO		"88E1121"
 # else
-#  define CONFIG_PHY_BASE_ADR	0x8
+#  define CFG_PHY_BASE_ADR	0x8
 #  define PHY_NO		"88E1116"
 # endif
 #endif /* CONFIG_CMD_NET */

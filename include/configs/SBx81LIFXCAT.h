@@ -49,7 +49,7 @@
  */
 #ifdef CONFIG_CMD_NET
 #define CFG_MVGBE_PORTS	{1, 0}	/* enable a single port */
-#define CONFIG_PHY_BASE_ADR	0x01
+#define CFG_PHY_BASE_ADR	0x01
 #endif /* CONFIG_CMD_NET */
 
 #endif /* _CONFIG_SBX81LIFXCAT_H */

@@ -29,7 +29,7 @@
  */
 #ifdef CONFIG_CMD_NET
 #define CFG_MVGBE_PORTS	{1, 0}	/* enable port 0 only */
-#define CONFIG_PHY_BASE_ADR	0
+#define CFG_PHY_BASE_ADR	0
 #endif /* CONFIG_CMD_NET */
 
 /*
