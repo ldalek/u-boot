@@ -39,7 +39,7 @@
                 "source ${loadaddr}\0"
 
 /* MIU (Memory Interleaving Unit) */
-#define CONFIG_MIU_2BIT_21_7_INTERLEAVED
+#define CFG_MIU_2BIT_21_7_INTERLEAVED
 
 #define RESERVE_BLOCK_SIZE		(512)
 #define BL1_SIZE			(16 << 10) /*16 K reserved for BL1*/
