@@ -472,7 +472,7 @@ RST_DEF_CMD(defboot) \
 "fatload usb 0:2 $ramdiskaddr $ramdiskfile;"	\
 "bootm $loadaddr $ramdiskaddr $fdtaddr"
 
-#define CONFIG_USB_EXT2_BOOT	\
+#define CFG_USB_EXT2_BOOT	\
 "setenv bootargs root=/dev/ram rw "	\
 "console=$consoledev,$baudrate $othbootargs " \
 "ramdisk_size=$ramdisk_size;"	\
