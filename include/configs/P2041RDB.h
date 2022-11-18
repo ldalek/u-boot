@@ -88,7 +88,7 @@
 #define CFG_SYS_FLASH_BASE_PHYS	CFG_SYS_FLASH_BASE
 #endif
 
-#define CONFIG_FSL_CPLD
+#define CFG_FSL_CPLD
 #define CPLD_BASE		0xffdf0000	/* CPLD registers */
 #ifdef CONFIG_PHYS_64BIT
 #define CPLD_BASE_PHYS		0xfffdf0000ull
