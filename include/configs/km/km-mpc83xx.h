@@ -94,4 +94,4 @@
 /*
  * QE UEC ethernet configuration
  */
-#define CONFIG_UEC_ETH
+#define CFG_UEC_ETH

@@ -27,28 +27,28 @@
 #endif
 
 static struct uec_inf uec_info[] = {
-#ifdef CONFIG_UEC_ETH1
+#ifdef CFG_UEC_ETH1
 	STD_UEC_INFO(1),	/* UEC1 */
 #endif
-#ifdef CONFIG_UEC_ETH2
+#ifdef CFG_UEC_ETH2
 	STD_UEC_INFO(2),	/* UEC2 */
 #endif
-#ifdef CONFIG_UEC_ETH3
+#ifdef CFG_UEC_ETH3
 	STD_UEC_INFO(3),	/* UEC3 */
 #endif
-#ifdef CONFIG_UEC_ETH4
+#ifdef CFG_UEC_ETH4
 	STD_UEC_INFO(4),	/* UEC4 */
 #endif
-#ifdef CONFIG_UEC_ETH5
+#ifdef CFG_UEC_ETH5
 	STD_UEC_INFO(5),	/* UEC5 */
 #endif
-#ifdef CONFIG_UEC_ETH6
+#ifdef CFG_UEC_ETH6
 	STD_UEC_INFO(6),	/* UEC6 */
 #endif
-#ifdef CONFIG_UEC_ETH7
+#ifdef CFG_UEC_ETH7
 	STD_UEC_INFO(7),	/* UEC7 */
 #endif
-#ifdef CONFIG_UEC_ETH8
+#ifdef CFG_UEC_ETH8
 	STD_UEC_INFO(8),	/* UEC8 */
 #endif
 };

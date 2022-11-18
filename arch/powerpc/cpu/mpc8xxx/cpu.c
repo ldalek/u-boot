@@ -351,7 +351,7 @@ int fixup_cpu(void)
  */
 int cpu_eth_init(struct bd_info *bis)
 {
-#if defined(CONFIG_UEC_ETH)
+#if defined(CFG_UEC_ETH)
 	uec_standard_init(bis);
 #endif
 

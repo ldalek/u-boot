@@ -402,7 +402,7 @@ int board_eth_init(struct bd_info *bis)
 
 	tsec_eth_init(bis, tsec_info, num);
 
-#if defined(CONFIG_UEC_ETH)
+#if defined(CFG_UEC_ETH)
 	/*  QE0 and QE3 need to be exposed for UCC1 and UCC5 Eth mode */
 	setbits_be32(&gur->pmuxcr, MPC85xx_PMUXCR_QE0);
 	setbits_be32(&gur->pmuxcr, MPC85xx_PMUXCR_QE3);
