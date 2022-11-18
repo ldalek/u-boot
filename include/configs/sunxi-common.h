@@ -70,7 +70,7 @@
 #define PHYS_SDRAM_0_SIZE		0x80000000 /* 2 GiB */
 
 /* mmc config */
-#define CONFIG_MMC_SUNXI_SLOT		0
+#define CFG_MMC_SUNXI_SLOT		0
 
 /*
  * Miscellaneous configurable options

@@ -526,8 +526,8 @@ static void mmc_pinmux_setup(int sdc)
 int board_mmc_init(struct bd_info *bis)
 {
 	if (!IS_ENABLED(CONFIG_UART0_PORT_F)) {
-		mmc_pinmux_setup(CONFIG_MMC_SUNXI_SLOT);
-		if (!sunxi_mmc_init(CONFIG_MMC_SUNXI_SLOT))
+		mmc_pinmux_setup(CFG_MMC_SUNXI_SLOT);
+		if (!sunxi_mmc_init(CFG_MMC_SUNXI_SLOT))
 			return -1;
 	}
 
