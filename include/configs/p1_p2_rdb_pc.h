@@ -482,7 +482,7 @@ RST_DEF_CMD(defboot) \
 "ext2load usb 0:4 $ramdiskaddr $ramdiskfile;" \
 "bootm $loadaddr $ramdiskaddr $fdtaddr"
 
-#define CONFIG_NORBOOT	\
+#define CFG_NORBOOT	\
 "setenv bootargs root=/dev/$jffs2nor rw "	\
 "console=$consoledev,$baudrate rootfstype=jffs2 $othbootargs;"	\
 "bootm $norbootaddr - $norfdtaddr"
