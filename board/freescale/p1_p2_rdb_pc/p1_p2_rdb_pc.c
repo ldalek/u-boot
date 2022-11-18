@@ -377,7 +377,7 @@ int board_eth_init(struct bd_info *bis)
 	SET_STD_TSEC_INFO(tsec_info[num], 1);
 	num++;
 #endif
-#ifdef CONFIG_TSEC2
+#ifdef CFG_TSEC2
 	SET_STD_TSEC_INFO(tsec_info[num], 2);
 	if (is_serdes_configured(SGMII_TSEC2)) {
 		printf("eTSEC2 is in sgmii mode.\n");

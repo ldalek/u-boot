@@ -353,8 +353,8 @@ extern unsigned long get_sdram_size(void);
 #define CFG_MII_DEFAULT_TSEC	1	/* Allow unregistered phys */
 #define CFG_TSEC1	1
 #define CFG_TSEC1_NAME	"eTSEC1"
-#define CONFIG_TSEC2	1
-#define CONFIG_TSEC2_NAME	"eTSEC2"
+#define CFG_TSEC2	1
+#define CFG_TSEC2_NAME	"eTSEC2"
 #define CONFIG_TSEC3	1
 #define CONFIG_TSEC3_NAME	"eTSEC3"
 

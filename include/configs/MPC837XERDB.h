@@ -41,7 +41,7 @@
 
 #ifdef CONFIG_VSC7385_ENET
 
-#define CONFIG_TSEC2
+#define CFG_TSEC2
 
 /* The flash address and size of the VSC7385 firmware image */
 #define CONFIG_VSC7385_IMAGE		0xFE7FE000
@@ -195,8 +195,8 @@
 #define TSEC1_PHYIDX			0
 #endif
 
-#ifdef CONFIG_TSEC2
-#define CONFIG_TSEC2_NAME		"TSEC1"
+#ifdef CFG_TSEC2
+#define CFG_TSEC2_NAME		"TSEC1"
 #define TSEC2_PHY_ADDR			0x1c
 #define TSEC2_FLAGS			(TSEC_GIGABIT | TSEC_REDUCED)
 #define TSEC2_PHYIDX			0

@@ -255,8 +255,8 @@
 #define CFG_MII_DEFAULT_TSEC		3
 #define CFG_TSEC1			1
 #define CFG_TSEC1_NAME		"eTSEC1"
-#define CONFIG_TSEC2			1
-#define CONFIG_TSEC2_NAME		"eTSEC2"
+#define CFG_TSEC2			1
+#define CFG_TSEC2_NAME		"eTSEC2"
 #define CONFIG_TSEC3			1
 #define CONFIG_TSEC3_NAME		"eTSEC3"
 

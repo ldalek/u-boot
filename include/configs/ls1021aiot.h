@@ -74,8 +74,8 @@
 #define CFG_MII_DEFAULT_TSEC		1
 #define CFG_TSEC1			1
 #define CFG_TSEC1_NAME		"eTSEC1"
-#define CONFIG_TSEC2			1
-#define CONFIG_TSEC2_NAME		"eTSEC2"
+#define CFG_TSEC2			1
+#define CFG_TSEC2_NAME		"eTSEC2"
 
 #define TSEC1_PHY_ADDR			1
 #define TSEC2_PHY_ADDR			3

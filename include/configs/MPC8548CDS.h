@@ -287,8 +287,8 @@
 
 #define CFG_TSEC1	1
 #define CFG_TSEC1_NAME	"eTSEC0"
-#define CONFIG_TSEC2	1
-#define CONFIG_TSEC2_NAME	"eTSEC1"
+#define CFG_TSEC2	1
+#define CFG_TSEC2_NAME	"eTSEC1"
 #define CONFIG_TSEC3	1
 #define CONFIG_TSEC3_NAME	"eTSEC2"
 #define CONFIG_TSEC4
