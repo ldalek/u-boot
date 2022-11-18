@@ -238,7 +238,7 @@ void board_init_uart_f(void)
 #if IS_ENABLED(CONFIG_TEGRA_PINCTRL)
 	int uart_ids = 0;	/* bit mask of which UART ids to enable */
 
-#ifdef CONFIG_TEGRA_ENABLE_UARTA
+#ifdef CFG_TEGRA_ENABLE_UARTA
 	uart_ids |= UARTA;
 #endif
 #ifdef CONFIG_TEGRA_ENABLE_UARTB
