@@ -246,7 +246,7 @@ car_cqos:
 	or	$(PREFETCH_L1_DISABLE | PREFETCH_L2_DISABLE), %eax
 	wrmsr
 
-#if (CONFIG_DCACHE_RAM_SIZE == CONFIG_L2_CACHE_SIZE)
+#if (CONFIG_DCACHE_RAM_SIZE == CFG_L2_CACHE_SIZE)
 /*
  * If CAR size is set to full L2 size, mask is calculated as all-zeros.
  * This is not supported by the CPU/uCode.

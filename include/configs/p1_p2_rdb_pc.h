@@ -112,7 +112,7 @@
 /*
  * These can be toggled for performance analysis, otherwise use default.
  */
-#define CONFIG_L2_CACHE
+#define CFG_L2_CACHE
 
 #define CFG_SYS_CCSRBAR		0xffe00000
 #define CFG_SYS_CCSRBAR_PHYS_LOW	CFG_SYS_CCSRBAR

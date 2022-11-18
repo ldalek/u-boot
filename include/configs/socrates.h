@@ -40,7 +40,7 @@
 /*
  * These can be toggled for performance analysis, otherwise use default.
  */
-#define CONFIG_L2_CACHE			/* toggle L2 cache		*/
+#define CFG_L2_CACHE			/* toggle L2 cache		*/
 
 #define CFG_SYS_INIT_DBCR DBCR_IDM		/* Enable Debug Exceptions	*/
 

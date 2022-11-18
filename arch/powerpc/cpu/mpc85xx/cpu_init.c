@@ -515,7 +515,7 @@ int enable_cluster_l2(void)
 int l2cache_init(void)
 {
 	__maybe_unused u32 svr = get_svr();
-#ifdef CONFIG_L2_CACHE
+#ifdef CFG_L2_CACHE
 	ccsr_l2cache_t *l2cache = (void __iomem *)CFG_SYS_MPC85xx_L2_ADDR;
 #elif defined(CONFIG_SYS_FSL_QORIQ_CHASSIS2) && defined(CONFIG_E6500)
 	struct ccsr_cluster_l2 * l2cache = (void __iomem *)CFG_SYS_FSL_CLUSTER_1_L2;
@@ -523,7 +523,7 @@ int l2cache_init(void)
 
 	puts ("L2:    ");
 
-#if defined(CONFIG_L2_CACHE)
+#if defined(CFG_L2_CACHE)
 	volatile uint cache_ctl;
 	uint ver;
 	u32 l2siz_field;

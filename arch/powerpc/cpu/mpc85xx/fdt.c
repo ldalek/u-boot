@@ -185,7 +185,7 @@ static inline void ft_fixup_l3cache(void *blob, int off)
 #define ft_fixup_l3cache(x, y)
 #endif
 
-#if defined(CONFIG_L2_CACHE) || \
+#if defined(CFG_L2_CACHE) || \
 	defined(CONFIG_BACKSIDE_L2_CACHE) || \
 	defined(CONFIG_SYS_FSL_QORIQ_CHASSIS2)
 static inline void ft_fixup_l2cache_compatible(void *blob, int off)
@@ -218,7 +218,7 @@ static inline void ft_fixup_l2cache_compatible(void *blob, int off)
 }
 #endif
 
-#if defined(CONFIG_L2_CACHE)
+#if defined(CFG_L2_CACHE)
 /* return size in kilobytes */
 static inline u32 l2cache_size(void)
 {
