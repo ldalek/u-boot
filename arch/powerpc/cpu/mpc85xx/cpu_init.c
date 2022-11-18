@@ -659,7 +659,7 @@ int cpu_init_r(void)
 #ifdef CFG_SYS_LBC_LCRR
 	fsl_lbc_t *lbc = (void __iomem *)LBC_BASE_ADDR;
 #endif
-#if defined(CONFIG_PPC_SPINTABLE_COMPATIBLE) && defined(CONFIG_MP)
+#if defined(CFG_PPC_SPINTABLE_COMPATIBLE) && defined(CONFIG_MP)
 	extern int spin_table_compat;
 	const char *spin;
 #endif
@@ -725,7 +725,7 @@ int cpu_init_r(void)
 		mtspr(SPRN_HDBCR0, (mfspr(SPRN_HDBCR0) | 0x80000000));
 #endif
 
-#if defined(CONFIG_PPC_SPINTABLE_COMPATIBLE) && defined(CONFIG_MP)
+#if defined(CFG_PPC_SPINTABLE_COMPATIBLE) && defined(CONFIG_MP)
 	spin = env_get("spin_table_compat");
 	if (spin && (*spin == 'n'))
 		spin_table_compat = 0;

@@ -12,7 +12,7 @@
  * This macro should be removed when we no longer care about backwards
  * compatibility with older operating systems.
  */
-#define CONFIG_PPC_SPINTABLE_COMPATIBLE
+#define CFG_PPC_SPINTABLE_COMPATIBLE
 
 #include <fsl_ddrc_version.h>
 

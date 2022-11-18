@@ -356,7 +356,7 @@ __secondary_reset_vector:
 	.align L1_CACHE_SHIFT
 	.global __second_half_boot_page
 __second_half_boot_page:
-#ifdef CONFIG_PPC_SPINTABLE_COMPATIBLE
+#ifdef CFG_PPC_SPINTABLE_COMPATIBLE
 	lis	r3,(spin_table_compat - __second_half_boot_page)@h
 	ori	r3,r3,(spin_table_compat - __second_half_boot_page)@l
 	add	r3,r3,r11 /* r11 has the address of __second_half_boot_page */
@@ -404,7 +404,7 @@ __second_half_boot_page:
  * "spin_table_compat=no". After Linux is fixed, we can remove this macro
  * and related code. For now, it is enabled by default.
  */
-#ifdef CONFIG_PPC_SPINTABLE_COMPATIBLE
+#ifdef CFG_PPC_SPINTABLE_COMPATIBLE
 	cmpwi   r14,0
 	beq     4f
 	dcbf    0, r10
@@ -486,7 +486,7 @@ __second_half_boot_page:
 __spin_table:
 	.space CONFIG_MAX_CPUS*ENTRY_SIZE
 
-#ifdef CONFIG_PPC_SPINTABLE_COMPATIBLE
+#ifdef CFG_PPC_SPINTABLE_COMPATIBLE
 	.align L1_CACHE_SHIFT
 	.global spin_table_compat
 spin_table_compat:
