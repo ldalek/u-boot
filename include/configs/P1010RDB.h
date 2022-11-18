@@ -371,7 +371,7 @@ extern unsigned long get_sdram_size(void);
 #define TSEC3_PHYIDX		0
 
 /* TBI PHY configuration for SGMII mode */
-#define CONFIG_TSEC_TBICR_SETTINGS ( \
+#define CFG_TSEC_TBICR_SETTINGS ( \
 		TBICR_PHY_RESET \
 		| TBICR_ANEG_ENABLE \
 		| TBICR_FULL_DUPLEX \
