@@ -52,7 +52,7 @@
 
 /* Network */
 #define CONFIG_KSNET_NETCP_V1_5
-#define CONFIG_KSNET_CPSW_NUM_PORTS	2
+#define CFG_KSNET_CPSW_NUM_PORTS	2
 #define CONFIG_KSNET_MDIO_PHY_CONFIG_ENABLE
 #define PHY_ANEG_TIMEOUT	10000 /* PHY needs longer aneg time */
 
