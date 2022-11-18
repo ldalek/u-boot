@@ -72,7 +72,7 @@ CONFIG_SYS_ETVPE_CLK		- Define PLL index for ETVPE clock
 
 DSP cores and other device's components have been added in this structure.
 
-freq_processor_dsp[CONFIG_MAX_DSP_CPUS]	- Array to contain the DSP core's frequencies
+freq_processor_dsp[CFG_MAX_DSP_CPUS]	- Array to contain the DSP core's frequencies
 freq_cpri				- To store CPRI frequency
 freq_maple				- To store MAPLE frequency
 freq_maple_ulb				- To store MAPLE-ULB frequency

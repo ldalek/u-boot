@@ -12,7 +12,7 @@ typedef struct
 {
 	unsigned long freq_processor[CONFIG_MAX_CPUS];
 #ifdef CONFIG_HETROGENOUS_CLUSTERS
-	unsigned long freq_processor_dsp[CONFIG_MAX_DSP_CPUS];
+	unsigned long freq_processor_dsp[CFG_MAX_DSP_CPUS];
 #endif
 	unsigned long freq_systembus;
 	unsigned long freq_ddrbus;
