@@ -183,7 +183,7 @@ static void store_bootp_params(struct bootp_hdr *bp)
  */
 static void store_net_params(struct bootp_hdr *bp)
 {
-#if !defined(CONFIG_SERVERIP_FROM_PROXYDHCP)
+#if !defined(CFG_SERVERIP_FROM_PROXYDHCP)
 	store_bootp_params(bp);
 #endif
 	net_copy_ip(&net_ip, &bp->bp_yiaddr);
@@ -1056,7 +1056,7 @@ static void dhcp_handler(uchar *pkt, unsigned dest, struct in_addr sip,
 	      "%d\n", src, dest, len, dhcp_state);
 
 	if (net_read_ip(&bp->bp_yiaddr).s_addr == 0) {
-#if defined(CONFIG_SERVERIP_FROM_PROXYDHCP)
+#if defined(CFG_SERVERIP_FROM_PROXYDHCP)
 		store_bootp_params(bp);
 #endif
 		return;
@@ -1081,11 +1081,11 @@ static void dhcp_handler(uchar *pkt, unsigned dest, struct in_addr sip,
 			    CONFIG_IS_ENABLED(NET_DEVICES))
 				efi_net_set_dhcp_ack(pkt, len);
 
-#if defined(CONFIG_SERVERIP_FROM_PROXYDHCP)
+#if defined(CFG_SERVERIP_FROM_PROXYDHCP)
 			if (!net_server_ip.s_addr)
-				udelay(CONFIG_SERVERIP_FROM_PROXYDHCP_DELAY_MS *
+				udelay(CFG_SERVERIP_FROM_PROXYDHCP_DELAY_MS *
 					1000);
-#endif	/* CONFIG_SERVERIP_FROM_PROXYDHCP */
+#endif	/* CFG_SERVERIP_FROM_PROXYDHCP */
 
 			debug("TRANSITIONING TO REQUESTING STATE\n");
 			dhcp_state = REQUESTING;

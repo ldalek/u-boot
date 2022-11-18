@@ -25,7 +25,7 @@
 
 /* Ethernet need */
 #ifdef CONFIG_DWC_ETH_QOS
-#define CONFIG_SERVERIP                 192.168.1.1
+#define CFG_SERVERIP                 192.168.1.1
 #endif
 
 #define STM32MP_FIP_IMAGE_GUID \

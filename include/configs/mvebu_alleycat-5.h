@@ -16,7 +16,7 @@
 
 /* Default Env vars */
 #define CFG_IPADDR           0.0.0.0 /* In order to cause an error */
-#define CONFIG_SERVERIP         0.0.0.0 /* In order to cause an error */
+#define CFG_SERVERIP         0.0.0.0 /* In order to cause an error */
 #define CFG_NETMASK          255.255.255.0
 #define CFG_GATEWAYIP        0.0.0.0
 #define CFG_ROOTPATH                 "/srv/nfs/" /* Default Dir for NFS */

@@ -25,7 +25,7 @@
 #ifdef CONFIG_MCFFEC
 #	define CFG_IPADDR	192.162.1.2
 #	define CFG_NETMASK	255.255.255.0
-#	define CONFIG_SERVERIP	192.162.1.1
+#	define CFG_SERVERIP	192.162.1.1
 #	define CFG_GATEWAYIP	192.162.1.1
 #endif				/* FEC_ENET */
 

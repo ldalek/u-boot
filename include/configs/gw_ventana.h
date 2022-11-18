@@ -58,6 +58,6 @@
 
 /* Environment */
 #define CFG_IPADDR             192.168.1.1
-#define CONFIG_SERVERIP           192.168.1.146
+#define CFG_SERVERIP           192.168.1.146
 
 #endif			       /* __CONFIG_H */

@@ -743,7 +743,7 @@ The following options need to be configured:
 		(Environment variable "ipaddr")
 
 - Server IP address:
-		CONFIG_SERVERIP
+		CFG_SERVERIP
 
 		Defines a default value for the IP address of a TFTP
 		server to contact when using the "tftboot" command.

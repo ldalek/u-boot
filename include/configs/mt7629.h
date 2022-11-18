@@ -29,6 +29,6 @@
 
 /* Ethernet */
 #define CFG_IPADDR			192.168.1.1
-#define CONFIG_SERVERIP			192.168.1.2
+#define CFG_SERVERIP			192.168.1.2
 
 #endif

@@ -71,7 +71,7 @@ enter a valid image address in flash */
 /* User network settings */
 
 #define CFG_IPADDR 192.168.100.2		/* default board IP address */
-#define CONFIG_SERVERIP 192.168.100.1	/* default tftp server IP address */
+#define CFG_SERVERIP 192.168.100.1	/* default tftp server IP address */
 
 #endif
 

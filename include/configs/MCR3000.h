@@ -53,7 +53,7 @@
 		"bootm ${loadaddr} - 0xf00000\0"
 
 #define CFG_IPADDR			192.168.0.3
-#define CONFIG_SERVERIP			192.168.0.1
+#define CFG_SERVERIP			192.168.0.1
 #define CFG_NETMASK			255.0.0.0
 
 /* Miscellaneous configurable options */

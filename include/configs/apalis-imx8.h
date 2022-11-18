@@ -16,7 +16,7 @@
 /* Networking */
 #define CFG_IPADDR			192.168.10.2
 #define CFG_NETMASK			255.255.255.0
-#define CONFIG_SERVERIP			192.168.10.1
+#define CFG_SERVERIP			192.168.10.1
 
 #define MEM_LAYOUT_ENV_SETTINGS \
 	"fdt_addr_r=0x84000000\0" \

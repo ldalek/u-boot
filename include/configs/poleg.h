@@ -14,7 +14,7 @@
 #define CFG_SYS_SDRAM_BASE           0x0
 
 /* Default environemnt variables */
-#define CONFIG_SERVERIP                 192.168.0.1
+#define CFG_SERVERIP                 192.168.0.1
 #define CFG_IPADDR                   192.168.0.2
 #define CFG_NETMASK                  255.255.255.0
 #define CFG_EXTRA_ENV_SETTINGS   "uimage_flash_addr=80200000\0"   \

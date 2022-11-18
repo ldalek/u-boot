@@ -33,8 +33,8 @@
 #undef CFG_IPADDR
 #define CFG_IPADDR			192.168.10.2
 #define CFG_NETMASK			255.255.255.0
-#undef CONFIG_SERVERIP
-#define CONFIG_SERVERIP			192.168.10.1
+#undef CFG_SERVERIP
+#define CFG_SERVERIP			192.168.10.1
 
 #define BOOT_TARGET_DEVICES(func) \
 	func(MMC, mmc, 1) \
