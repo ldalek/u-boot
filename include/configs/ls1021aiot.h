@@ -90,7 +90,7 @@
 #define FSL_PCIE_COMPAT		"fsl,ls1021a-pcie"
 
 #define CFG_PEN_ADDR_BIG_ENDIAN
-#define CONFIG_SMP_PEN_ADDR		0x01ee0200
+#define CFG_SMP_PEN_ADDR		0x01ee0200
 
 #define HWCONFIG_BUFFER_SIZE		256
 
