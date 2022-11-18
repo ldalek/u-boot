@@ -150,7 +150,7 @@
  */
 
 #ifdef CONFIG_CMD_DATE
-#define CONFIG_I2C_RTC_ADDR		0x68
+#define CFG_I2C_RTC_ADDR		0x68
 #endif
 
 #endif	/* _CONFIG_M5282EVB_H */
