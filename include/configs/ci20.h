@@ -18,9 +18,9 @@
 #define CFG_SYS_NS16550_CLK		48000000
 
 /* Ethernet: davicom DM9000 */
-#define CONFIG_DM9000_BASE		0xb6000000
-#define DM9000_IO			CONFIG_DM9000_BASE
-#define DM9000_DATA			(CONFIG_DM9000_BASE + 2)
+#define CFG_DM9000_BASE		0xb6000000
+#define DM9000_IO			CFG_DM9000_BASE
+#define DM9000_DATA			(CFG_DM9000_BASE + 2)
 
 /* Miscellaneous configuration options */
 

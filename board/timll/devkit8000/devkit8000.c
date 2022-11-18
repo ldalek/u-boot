@@ -79,7 +79,7 @@ int board_init(void)
 static void gpmc_dm9000_config(void)
 {
 	enable_gpmc_cs_config(gpmc_net_config, &gpmc_cfg->cs[6],
-		CONFIG_DM9000_BASE, GPMC_SIZE_16M);
+		CFG_DM9000_BASE, GPMC_SIZE_16M);
 }
 
 /*
@@ -102,7 +102,7 @@ int misc_init_r(void)
 #ifdef CONFIG_DRIVER_DM9000
 	/* Configure GPMC registers for DM9000 */
 	enable_gpmc_cs_config(gpmc_net_config, &gpmc_cfg->cs[6],
-			CONFIG_DM9000_BASE, GPMC_SIZE_16M);
+			CFG_DM9000_BASE, GPMC_SIZE_16M);
 
 	/* Use OMAP DIE_ID as MAC address */
 	if (!eth_env_get_enetaddr("ethaddr", enetaddr)) {
