@@ -121,7 +121,7 @@ static struct usb_device_descriptor device_descriptor = {
 };
 
 
-#if defined(CONFIG_USBD_HS)
+#if defined(CFG_USBD_HS)
 static struct usb_qualifier_descriptor qualifier_descriptor = {
 	.bLength = sizeof(struct usb_qualifier_descriptor),
 	.bDescriptorType =	USB_DT_QUAL,
@@ -639,7 +639,7 @@ static void usbtty_init_instances (void)
 	memset (device_instance, 0, sizeof (struct usb_device_instance));
 	device_instance->device_state = STATE_INIT;
 	device_instance->device_descriptor = &device_descriptor;
-#if defined(CONFIG_USBD_HS)
+#if defined(CFG_USBD_HS)
 	device_instance->qualifier_descriptor = &qualifier_descriptor;
 #endif
 	device_instance->event = usbtty_event_handler;
@@ -755,7 +755,7 @@ static void usbtty_init_terminal_type(short type)
 			device_descriptor.idProduct =
 				cpu_to_le16(CONFIG_USBD_PRODUCTID_CDCACM);
 
-#if defined(CONFIG_USBD_HS)
+#if defined(CFG_USBD_HS)
 			qualifier_descriptor.bDeviceClass =
 				COMMUNICATIONS_DEVICE_CLASS;
 #endif
@@ -787,7 +787,7 @@ static void usbtty_init_terminal_type(short type)
 			device_descriptor.bDeviceClass = 0xFF;
 			device_descriptor.idProduct =
 				cpu_to_le16(CONFIG_USBD_PRODUCTID_GSERIAL);
-#if defined(CONFIG_USBD_HS)
+#if defined(CFG_USBD_HS)
 			qualifier_descriptor.bDeviceClass = 0xFF;
 #endif
 			/* Assign endpoint indices */
@@ -937,7 +937,7 @@ static int usbtty_configured (void)
 static void usbtty_event_handler (struct usb_device_instance *device,
 				  usb_device_event_t event, int data)
 {
-#if defined(CONFIG_USBD_HS)
+#if defined(CFG_USBD_HS)
 	int i;
 #endif
 	switch (event) {
@@ -950,7 +950,7 @@ static void usbtty_event_handler (struct usb_device_instance *device,
 		break;
 
 	case DEVICE_ADDRESS_ASSIGNED:
-#if defined(CONFIG_USBD_HS)
+#if defined(CFG_USBD_HS)
 		/*
 		 * is_usbd_high_speed routine needs to be defined by
 		 * specific gadget driver

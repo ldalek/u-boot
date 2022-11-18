@@ -11,7 +11,7 @@
 
 #include "mx6_common.h"
 
-#define CONFIG_USBD_HS
+#define CFG_USBD_HS
 
 #define CFG_MXC_UART_BASE	       UART2_BASE
 

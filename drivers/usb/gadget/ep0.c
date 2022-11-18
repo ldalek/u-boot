@@ -371,7 +371,7 @@ static int ep0_get_descriptor (struct usb_device_instance *device,
 		}
 		break;
 	case USB_DESCRIPTOR_TYPE_DEVICE_QUALIFIER:
-#if defined(CONFIG_USBD_HS)
+#if defined(CFG_USBD_HS)
 		{
 			struct usb_qualifier_descriptor *qualifier_descriptor =
 				device->qualifier_descriptor;

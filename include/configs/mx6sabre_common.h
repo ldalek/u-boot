@@ -145,6 +145,6 @@
 
 /* Environment organization */
 
-#define CONFIG_USBD_HS
+#define CFG_USBD_HS
 
 #endif                         /* __MX6QSABRE_COMMON_CONFIG_H */

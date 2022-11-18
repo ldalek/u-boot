@@ -73,7 +73,7 @@
  */
 
 /* USB DRACO ID as default */
-#define CONFIG_USBD_HS
+#define CFG_USBD_HS
 
 /* USB Device Firmware Update support */
 #define DFU_MANIFEST_POLL_TIMEOUT	25000

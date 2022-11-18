@@ -101,6 +101,6 @@
 /* USB Configs */
 #define CFG_MXC_USB_PORTSC  (PORT_PTS_UTMI | PORT_PTS_PTW)
 
-#define CONFIG_USBD_HS
+#define CFG_USBD_HS
 
 #endif	/* __CONFIG_H */

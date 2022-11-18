@@ -196,7 +196,7 @@ struct usb_bus_instance;
 #define USB_DT_INTERFACE		0x04
 #define USB_DT_ENDPOINT			0x05
 
-#if defined(CONFIG_USBD_HS)
+#if defined(CFG_USBD_HS)
 #define USB_DT_QUAL			0x06
 #endif
 
@@ -279,7 +279,7 @@ struct usb_bus_instance;
  * USB Spec Release number
  */
 
-#if defined(CONFIG_USBD_HS)
+#if defined(CFG_USBD_HS)
 #define USB_BCD_VERSION			0x0200
 #else
 #define USB_BCD_VERSION			0x0110
@@ -552,7 +552,7 @@ struct usb_device_instance {
 	/* generic */
 	char *name;
 	struct usb_device_descriptor *device_descriptor;	/* per device descriptor */
-#if defined(CONFIG_USBD_HS)
+#if defined(CFG_USBD_HS)
 	struct usb_qualifier_descriptor *qualifier_descriptor;
 #endif
 
@@ -644,7 +644,7 @@ struct usb_string_descriptor *usbd_get_string (u8);
 struct usb_device_descriptor *usbd_device_device_descriptor(struct
 		usb_device_instance *, int);
 
-#if defined(CONFIG_USBD_HS)
+#if defined(CFG_USBD_HS)
 /*
  * is_usbd_high_speed routine needs to be defined by specific gadget driver
  * It returns true if device enumerates at High speed
