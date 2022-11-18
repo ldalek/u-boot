@@ -228,12 +228,12 @@
 #define CFG_HOSTNAME		"mpc837x_rdb"
 #define CFG_ROOTPATH		"/nfsroot"
 				/* U-Boot image on TFTP server */
-#define CONFIG_UBOOTPATH	"u-boot.bin"
+#define CFG_UBOOTPATH	"u-boot.bin"
 #define CFG_FDTFILE		"mpc8379_rdb.dtb"
 
 #define CFG_EXTRA_ENV_SETTINGS \
 	"netdev=" CFG_NETDEV "\0"				\
-	"uboot=" CONFIG_UBOOTPATH "\0"					\
+	"uboot=" CFG_UBOOTPATH "\0"					\
 	"tftpflash=tftp $loadaddr $uboot;"				\
 		"protect off " __stringify(CONFIG_TEXT_BASE)	\
 			" +$filesize; "	\

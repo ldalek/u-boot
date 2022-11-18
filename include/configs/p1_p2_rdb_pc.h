@@ -420,13 +420,13 @@
  */
 #define CFG_HOSTNAME		"unknown"
 #define CFG_ROOTPATH		"/opt/nfsroot"
-#define CONFIG_UBOOTPATH	u-boot.bin /* U-Boot image on TFTP server */
+#define CFG_UBOOTPATH	u-boot.bin /* U-Boot image on TFTP server */
 
 #include "p1_p2_bootsrc.h"
 
 #define	CFG_EXTRA_ENV_SETTINGS	\
 "netdev=eth0\0"	\
-"uboot=" __stringify(CONFIG_UBOOTPATH) "\0"	\
+"uboot=" __stringify(CFG_UBOOTPATH) "\0"	\
 "loadaddr=1000000\0"	\
 "bootfile=uImage\0"	\
 "tftpflash=tftpboot $loadaddr $uboot; "	\

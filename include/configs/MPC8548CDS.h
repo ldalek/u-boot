@@ -329,7 +329,7 @@
 
 #define CFG_HOSTNAME	 "unknown"
 #define CFG_ROOTPATH	 "/nfsroot"
-#define CONFIG_UBOOTPATH	8548cds/u-boot.bin	/* TFTP server */
+#define CFG_UBOOTPATH	8548cds/u-boot.bin	/* TFTP server */
 
 #define CFG_SERVERIP	 192.168.1.1
 #define CFG_GATEWAYIP 192.168.1.1
@@ -338,7 +338,7 @@
 #define	CFG_EXTRA_ENV_SETTINGS		\
 	"hwconfig=fsl_ddr:ecc=off\0"		\
 	"netdev=eth0\0"				\
-	"uboot=" __stringify(CONFIG_UBOOTPATH) "\0"	\
+	"uboot=" __stringify(CFG_UBOOTPATH) "\0"	\
 	"tftpflash=tftpboot $loadaddr $uboot; "	\
 		"protect off " __stringify(CONFIG_TEXT_BASE)	\
 			" +$filesize; "	\

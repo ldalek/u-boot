@@ -414,7 +414,7 @@
  * Environment Configuration
  */
 #define CFG_ROOTPATH		"/opt/nfsroot"
-#define CONFIG_UBOOTPATH	"u-boot.bin"	/* U-Boot image on TFTP server*/
+#define CFG_UBOOTPATH	"u-boot.bin"	/* U-Boot image on TFTP server*/
 
 #define __USB_PHY_TYPE	utmi
 #define RAMDISKFILE	"t104xrdb/ramdisk.uboot"
@@ -436,7 +436,7 @@
 	"usb1:dr_mode=host,phy_type=" __stringify(__USB_PHY_TYPE) ";"\
 	"usb2:dr_mode=host,phy_type=" __stringify(__USB_PHY_TYPE) "\0"\
 	"netdev=eth0\0"						\
-	"uboot=" __stringify(CONFIG_UBOOTPATH) "\0"		\
+	"uboot=" __stringify(CFG_UBOOTPATH) "\0"		\
 	"ubootaddr=" __stringify(CONFIG_TEXT_BASE) "\0"	\
 	"tftpflash=tftpboot $loadaddr $uboot && "		\
 	"protect off $ubootaddr +$filesize && "			\
