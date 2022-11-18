@@ -1006,7 +1006,7 @@ The following options need to be configured:
 		You should define these to the GPIO value as given directly to
 		the generic GPIO functions.
 
-		CONFIG_I2C_MULTI_BUS
+		CFG_I2C_MULTI_BUS
 
 		This option allows the use of multiple I2C buses, each of which
 		must have a controller.	 At any point in time, only one bus is
@@ -1016,17 +1016,17 @@ The following options need to be configured:
 		CFG_SYS_I2C_NOPROBES
 
 		This option specifies a list of I2C devices that will be skipped
-		when the 'i2c probe' command is issued.	 If CONFIG_I2C_MULTI_BUS
+		when the 'i2c probe' command is issued.	 If CFG_I2C_MULTI_BUS
 		is set, specify a list of bus-device pairs.  Otherwise, specify
 		a 1D array of device addresses
 
 		e.g.
-			#undef	CONFIG_I2C_MULTI_BUS
+			#undef	CFG_I2C_MULTI_BUS
 			#define CFG_SYS_I2C_NOPROBES {0x50,0x68}
 
 		will skip addresses 0x50 and 0x68 on a board with one I2C bus
 
-			#define CONFIG_I2C_MULTI_BUS
+			#define CFG_I2C_MULTI_BUS
 			#define CFG_SYS_I2C_NOPROBES	{{0,0x50},{0,0x68},{1,0x54}}
 
 		will skip addresses 0x50 and 0x68 on bus 0 and address 0x54 on bus 1

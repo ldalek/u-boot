@@ -374,7 +374,7 @@ static int __i2c_write(struct mv_i2c *base, uchar chip, u8 *addr, int alen,
 
 static struct mv_i2c *base_glob;
 
-#ifdef CONFIG_I2C_MULTI_BUS
+#ifdef CFG_I2C_MULTI_BUS
 static unsigned long i2c_regs[CONFIG_MV_I2C_NUM] = CONFIG_MV_I2C_REG;
 static unsigned int bus_initialized[CONFIG_MV_I2C_NUM];
 static unsigned int current_bus;
@@ -407,7 +407,7 @@ void i2c_init(int speed, int slaveaddr)
 {
 	u32 val;
 
-#ifdef CONFIG_I2C_MULTI_BUS
+#ifdef CFG_I2C_MULTI_BUS
 	current_bus = 0;
 	base_glob = (struct mv_i2c *)i2c_regs[current_bus];
 #else
