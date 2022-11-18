@@ -18,7 +18,7 @@
 /* IRAM Layout */
 #define CFG_IRAM_BASE		0x02100000
 #define CONFIG_IRAM_SIZE		0x58000
-#define CONFIG_IRAM_END			(CFG_IRAM_BASE + CONFIG_IRAM_SIZE)
+#define CFG_IRAM_END			(CFG_IRAM_BASE + CONFIG_IRAM_SIZE)
 #define CPU_RELEASE_ADDR		secondary_boot_addr
 
 /* select serial console configuration */
