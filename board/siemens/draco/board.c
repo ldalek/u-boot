@@ -370,7 +370,7 @@ U_BOOT_CMD(
 #endif /* #if defined(CONFIG_DRIVER_TI_CPSW) */
 #endif /* #if (defined(CONFIG_DRIVER_TI_CPSW) && !defined(CONFIG_SPL_BUILD)) */
 
-#ifdef CONFIG_NAND_CS_INIT
+#ifdef CFG_NAND_CS_INIT
 /* GPMC definitions for second nand cs1 */
 static const u32 gpmc_nand_config[] = {
 	ETAMIN_NAND_GPMC_CONFIG1,

@@ -93,7 +93,7 @@ int board_init(void)
 
 	gpmc_init();
 
-#ifdef CONFIG_NAND_CS_INIT
+#ifdef CFG_NAND_CS_INIT
 	board_nand_cs_init();
 #endif
 
