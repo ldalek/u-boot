@@ -83,7 +83,7 @@ struct dm9000_priv {
 };
 
 /* DM9000 network board routine ---------------------------- */
-#ifndef CONFIG_DM9000_BYTE_SWAPPED
+#ifndef CFG_DM9000_BYTE_SWAPPED
 #define dm9000_outb(d, r) writeb((d), (r))
 #define dm9000_outw(d, r) writew((d), (r))
 #define dm9000_outl(d, r) writel((d), (r))
