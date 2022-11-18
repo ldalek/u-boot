@@ -41,7 +41,7 @@
 
 #ifdef CONFIG_USB_EHCI_ZYNQ
 # define DFU_DEFAULT_POLL_TIMEOUT	300
-# define CONFIG_THOR_RESET_OFF
+# define CFG_THOR_RESET_OFF
 #endif
 
 /* enable preboot to be loaded before CONFIG_BOOTDELAY */
