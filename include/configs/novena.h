@@ -25,7 +25,7 @@
  */
 
 /* Booting Linux */
-#define CONFIG_HOSTNAME			"novena"
+#define CFG_HOSTNAME			"novena"
 
 /* Physical Memory Map */
 #define PHYS_SDRAM			MMDC0_ARB_BASE_ADDR

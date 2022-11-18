@@ -84,7 +84,7 @@
 /*
  * Extra Environments
  */
-#define CONFIG_HOSTNAME		"m53menlo"
+#define CFG_HOSTNAME		"m53menlo"
 
 #define CFG_EXTRA_ENV_SETTINGS					\
 	"consdev=ttymxc0\0"						\

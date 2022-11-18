@@ -23,7 +23,7 @@
 /*
  * High Level Configuration Options
  */
-#define CONFIG_HOSTNAME		"kmopti2"
+#define CFG_HOSTNAME		"kmopti2"
 
 /* include common defines/options for all Keymile boards */
 #include "km/keymile-common.h"

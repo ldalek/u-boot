@@ -23,7 +23,7 @@
 /*
  * High Level Configuration Options
  */
-#define CONFIG_HOSTNAME		"tuxx1"
+#define CFG_HOSTNAME		"tuxx1"
 
 /* include common defines/options for all Keymile boards */
 #include "km/keymile-common.h"

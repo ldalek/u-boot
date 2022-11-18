@@ -8,7 +8,7 @@
 #ifndef __CONFIG_H
 #define __CONFIG_H
 
-#define CONFIG_HOSTNAME		"kmeter1"
+#define CFG_HOSTNAME		"kmeter1"
 
 /* include common defines/options for all Keymile boards */
 #include "km/keymile-common.h"

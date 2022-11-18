@@ -37,7 +37,7 @@
 #	define CFG_GATEWAYIP	192.162.1.1
 #endif				/* FEC_ENET */
 
-#define CONFIG_HOSTNAME		"M53017"
+#define CFG_HOSTNAME		"M53017"
 #define CFG_EXTRA_ENV_SETTINGS		\
 	"netdev=eth0\0"				\
 	"loadaddr=40010000\0"			\

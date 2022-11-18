@@ -21,7 +21,7 @@
  * Environment Configuration
  */
 
-#define CONFIG_HOSTNAME		"ccdc"
+#define CFG_HOSTNAME		"ccdc"
 #define CONFIG_ROOTPATH		"/opt/nfsroot"
 
 #define CFG_EXTRA_ENV_SETTINGS						\

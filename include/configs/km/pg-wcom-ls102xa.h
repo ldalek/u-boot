@@ -188,7 +188,7 @@
 	"cramfsloadfdt="						\
 		"cramfsload ${fdt_addr_r} "				\
 		"fdt_0x${IVM_BoardId}_0x${IVM_HWKey}.dtb\0"		\
-	"u-boot=" CONFIG_HOSTNAME "/u-boot.bin\0"			\
+	"u-boot=" CFG_HOSTNAME "/u-boot.bin\0"			\
 	"update=protect off " __stringify(CONFIG_SYS_MONITOR_BASE)	\
 		" +${filesize} && "					\
 		"erase " __stringify(CONFIG_SYS_MONITOR_BASE)		\

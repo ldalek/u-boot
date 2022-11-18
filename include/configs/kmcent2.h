@@ -8,8 +8,8 @@
 #ifndef __KMCENT2_H
 #define __KMCENT2_H
 
-#define CONFIG_HOSTNAME		"kmcent2"
-#define KM_BOARD_NAME	CONFIG_HOSTNAME
+#define CFG_HOSTNAME		"kmcent2"
+#define KM_BOARD_NAME	CFG_HOSTNAME
 
 /*
  * The Linux fsl_fman driver needs to be able to process frames with more
@@ -401,7 +401,7 @@ int get_scl(void);
 	"cramfsloadfdt="						\
 		"cramfsload ${fdt_addr_r} "				\
 		"fdt_0x${IVM_BoardId}_0x${IVM_HWKey}.dtb\0"		\
-	"u-boot=" CONFIG_HOSTNAME "/u-boot.bin\0"		\
+	"u-boot=" CFG_HOSTNAME "/u-boot.bin\0"		\
 	"update=protect off " __stringify(CONFIG_SYS_MONITOR_BASE)	\
 		" +${filesize} && "					\
 		"erase " __stringify(CONFIG_SYS_MONITOR_BASE)		\

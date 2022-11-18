@@ -74,8 +74,8 @@ const char default_environment[] = {
 #ifdef	CONFIG_NETMASK
 	"netmask="	__stringify(CONFIG_NETMASK)	"\0"
 #endif
-#ifdef	CONFIG_HOSTNAME
-	"hostname="	CONFIG_HOSTNAME	"\0"
+#ifdef	CFG_HOSTNAME
+	"hostname="	CFG_HOSTNAME	"\0"
 #endif
 #ifdef CONFIG_USE_BOOTFILE
 	"bootfile="	CONFIG_BOOTFILE			"\0"

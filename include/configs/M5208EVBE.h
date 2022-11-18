@@ -24,7 +24,7 @@
 #	define CFG_GATEWAYIP	192.162.1.1
 #endif				/* CONFIG_MCFFEC */
 
-#define CONFIG_HOSTNAME		"M5208EVBe"
+#define CFG_HOSTNAME		"M5208EVBe"
 #define CFG_EXTRA_ENV_SETTINGS		\
 	"netdev=eth0\0"				\
 	"loadaddr=40010000\0"			\

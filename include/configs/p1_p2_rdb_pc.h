@@ -418,7 +418,7 @@
 /*
  * Environment Configuration
  */
-#define CONFIG_HOSTNAME		"unknown"
+#define CFG_HOSTNAME		"unknown"
 #define CONFIG_ROOTPATH		"/opt/nfsroot"
 #define CONFIG_UBOOTPATH	u-boot.bin /* U-Boot image on TFTP server */
 

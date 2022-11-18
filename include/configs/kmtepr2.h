@@ -23,7 +23,7 @@
 /*
  * High Level Configuration Options
  */
-#define CONFIG_HOSTNAME         "kmtepr2"
+#define CFG_HOSTNAME         "kmtepr2"
 
 /* include common defines/options for all Keymile boards */
 #include "km/keymile-common.h"

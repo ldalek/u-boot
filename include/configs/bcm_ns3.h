@@ -9,7 +9,7 @@
 
 #include <linux/sizes.h>
 
-#define CONFIG_HOSTNAME			"NS3"
+#define CFG_HOSTNAME			"NS3"
 
 /* Physical Memory Map */
 #define V2M_BASE			0x80000000

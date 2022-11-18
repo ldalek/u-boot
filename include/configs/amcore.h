@@ -8,7 +8,7 @@
 #ifndef __AMCORE_CONFIG_H
 #define __AMCORE_CONFIG_H
 
-#define CONFIG_HOSTNAME			"AMCORE"
+#define CFG_HOSTNAME			"AMCORE"
 
 #define CFG_SYS_UART_PORT		0
 
