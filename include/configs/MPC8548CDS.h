@@ -291,8 +291,8 @@
 #define CFG_TSEC2_NAME	"eTSEC1"
 #define CFG_TSEC3	1
 #define CFG_TSEC3_NAME	"eTSEC2"
-#define CONFIG_TSEC4
-#define CONFIG_TSEC4_NAME	"eTSEC3"
+#define CFG_TSEC4
+#define CFG_TSEC4_NAME	"eTSEC3"
 #undef CONFIG_MPC85XX_FEC
 
 #define TSEC1_PHY_ADDR		0

@@ -44,7 +44,7 @@ static struct tsec_info_struct tsec_info[] = {
 #ifdef CFG_TSEC3
 	STD_TSEC_INFO(3),	/* TSEC3 */
 #endif
-#ifdef CONFIG_TSEC4
+#ifdef CFG_TSEC4
 	STD_TSEC_INFO(4),	/* TSEC4 */
 #endif
 };
