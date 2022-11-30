@@ -210,7 +210,6 @@
 #endif
 
 /* define to use L1 as initial stack */
-#define CONFIG_L1_INIT_RAM
 #define CFG_SYS_INIT_RAM_ADDR	0xfdd00000 /* Initial L1 address */
 #define CFG_SYS_INIT_RAM_ADDR_PHYS_HIGH	0xf
 #define CFG_SYS_INIT_RAM_ADDR_PHYS_LOW	0xfe03c000
