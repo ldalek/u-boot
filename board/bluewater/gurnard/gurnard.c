@@ -412,10 +412,6 @@ int dram_init(void)
 	return 0;
 }
 
-void reset_phy(void)
-{
-}
-
 static struct atmel_serial_plat at91sam9260_serial_plat = {
 	.base_addr = ATMEL_BASE_DBGU,
 };

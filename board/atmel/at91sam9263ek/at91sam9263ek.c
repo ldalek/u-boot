@@ -113,9 +113,3 @@ int dram_init(void)
 
 	return 0;
 }
-
-#ifdef CONFIG_RESET_PHY_R
-void reset_phy(void)
-{
-}
-#endif

@@ -132,13 +132,6 @@ int board_init(void)
 	return 0;
 }
 
-#ifdef CONFIG_RESET_PHY_R
-/* automatically defined by kirkwood config.h */
-void reset_phy(void)
-{
-}
-#endif
-
 #ifdef CONFIG_MV88E61XX_SWITCH
 int mv88e61xx_hw_reset(struct phy_device *phydev)
 {
