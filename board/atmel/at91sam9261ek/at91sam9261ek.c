@@ -19,10 +19,7 @@
 #include <asm/arch/clk.h>
 #include <asm/arch/gpio.h>
 #include <atmel_lcdc.h>
-#if defined(CONFIG_RESET_PHY_R) && defined(CONFIG_DRIVER_DM9000)
-#include <net.h>
 #include <netdev.h>
-#endif
 #include <asm/mach-types.h>
 
 DECLARE_GLOBAL_DATA_PTR;
@@ -181,16 +178,3 @@ int dram_init(void)
 
 	return 0;
 }
-
-#ifdef CONFIG_RESET_PHY_R
-void reset_phy(void)
-{
-#ifdef CONFIG_DRIVER_DM9000
-	/*
-	 * Initialize ethernet HW addr prior to starting Linux,
-	 * needed for nfsroot
-	 */
-	eth_init();
-#endif
-}
-#endif

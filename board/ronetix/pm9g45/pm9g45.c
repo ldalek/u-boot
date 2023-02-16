@@ -154,19 +154,6 @@ int dram_init_banksize(void)
 	return 0;
 }
 
-#ifdef CONFIG_RESET_PHY_R
-void reset_phy(void)
-{
-#ifdef CONFIG_MACB
-	/*
-	 * Initialize ethernet HW addr prior to starting Linux,
-	 * needed for nfsroot
-	 */
-	eth_init();
-#endif
-}
-#endif
-
 int board_eth_init(struct bd_info *bis)
 {
 	int rc = 0;
