@@ -8,6 +8,7 @@ menuconfig FSL_MC_ENET
 	default y
 	select DM_MDIO
 	select FSL_LS_MDIO
+	select RESET_PHY_R
 	select RESV_RAM
 	help
 	  Enable Management Complex (MC) network
