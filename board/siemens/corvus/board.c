@@ -24,12 +24,6 @@
 #include <asm/arch/gpio.h>
 #include <asm/gpio.h>
 #include <asm/arch/clk.h>
-#if defined(CONFIG_RESET_PHY_R) && defined(CONFIG_MACB)
-#include <net.h>
-#endif
-#ifndef CONFIG_DM_ETH
-#include <netdev.h>
-#endif
 #include <spi.h>
 
 #ifdef CONFIG_USB_GADGET_ATMEL_USBA
@@ -291,17 +285,6 @@ int dram_init(void)
 				    CFG_SYS_SDRAM_SIZE);
 	return 0;
 }
-
-#ifndef CONFIG_DM_ETH
-int board_eth_init(struct bd_info *bis)
-{
-	int rc = 0;
-#ifdef CONFIG_MACB
-	rc = macb_eth_initialize(0, (void *)ATMEL_BASE_EMAC, 0x00);
-#endif
-	return rc;
-}
-#endif
 
 /* SPI chip select control */
 int spi_cs_is_valid(unsigned int bus, unsigned int cs)
