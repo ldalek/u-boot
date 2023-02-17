@@ -33,6 +33,7 @@ choice
 config TARGET_OPENRD
 	bool "Marvell OpenRD Board"
 	select KW88F6281
+	select RESET_PHY_R
 	select SHEEVA_88SV131
 
 config TARGET_DREAMPLUG
@@ -44,11 +45,13 @@ config TARGET_DREAMPLUG
 config TARGET_DS109
 	bool "Synology DS109"
 	select KW88F6281
+	select RESET_PHY_R
 	select SHEEVA_88SV131
 
 config TARGET_GURUPLUG
 	bool "GuruPlug Board"
 	select KW88F6281
+	select RESET_PHY_R
 	select SHEEVA_88SV131
 
 config TARGET_SHEEVAPLUG
@@ -81,6 +84,7 @@ config TARGET_DNS325
 	bool "dns325 Board"
 	select FEROCEON_88FR131
 	select KW88F6281
+	select RESET_PHY_R
 
 config TARGET_ICONNECT
 	bool "iconnect Board"
@@ -98,10 +102,12 @@ config TARGET_NET2BIG_V2
 	bool "LaCie 2Big Network v2 NAS Board"
 	select FEROCEON_88FR131
 	select KW88F6281
+	select RESET_PHY_R
 
 config TARGET_NETSPACE_V2
 	bool "LaCie netspace_v2 Board"
 	select FEROCEON_88FR131
+	select RESET_PHY_R
 
 config TARGET_IB62X0
 	bool "ib62x0 Board"
@@ -124,6 +130,7 @@ config TARGET_NAS220
 	bool "BlackArmor NAS220"
 	select FEROCEON_88FR131
 	select KW88F6192
+	select RESET_PHY_R
 
 config TARGET_NSA310S
 	bool "Zyxel NSA310S"
