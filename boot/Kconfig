@@ -358,9 +358,9 @@ config BOOT_DEFAULTS
 	# the commands themselves to be enabled, but this is how some of the
 	# functionality is controlled at present
 	select CMD_ENV_EXISTS
-	select CMD_EXT2
-	select CMD_EXT4
-	select CMD_FAT
+	select CMD_EXT2 if BLK
+	select CMD_EXT4 if BLK
+	select CMD_FAT if BLK
 	select CMD_FS_GENERIC
 	select CMD_PART if PARTITIONS
 	select CMD_DHCP if CMD_NET
@@ -372,7 +372,7 @@ config BOOT_DEFAULTS
 	select CMD_BOOTZ if ARM && !ARM64
 
 	imply CMD_MII if NET
-	imply USB_STORAGE
+	imply USB_STORAGE if USB_HOST
 	imply EFI_PARTITION
 	imply ISO_PARTITION
 

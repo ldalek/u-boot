@@ -91,7 +91,7 @@ config SPL_AMIGA_PARTITION
 
 config EFI_PARTITION
 	bool "Enable EFI GPT partition table"
-	default y if DISTRO_DEFAULTS
+	default y if BOOT_DEFAULTS
 	default y if ARCH_TEGRA
 	select PARTITIONS
 	select LIB_UUID
