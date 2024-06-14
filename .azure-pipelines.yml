@@ -23,24 +23,34 @@ stages:
       matrix:
         am33xx_at91_kirkwood_mvebu_omap:
           BUILDMAN: "am33xx at91_kirkwood mvebu omap -x siemens"
+          name: am33xx_at91_kirkwood_mvebu_omap
         amlogic_bcm_boundary_engicam_siemens_technexion_oradex:
           BUILDMAN: "amlogic bcm boundary engicam siemens technexion toradex -x mips"
+          name: amlogic_bcm_boundary_engicam_siemens_technexion_oradex
         arm_nxp_minus_imx:
           BUILDMAN: "freescale -x powerpc,m68k,imx,mx"
+          name: arm_nxp_minus_imx
         imx:
           BUILDMAN: "mx imx -x boundary,engicam,technexion,toradex"
+          name: imx
         rk:
           BUILDMAN: "rk"
+          name: rk
         sunxi:
           BUILDMAN: "sunxi"
+          name: sunxi
         powerpc:
           BUILDMAN: "powerpc"
+          name: powerpc
         arm_catch_all:
           BUILDMAN: "arm -x aarch64,am33xx,at91,bcm,ls1,kirkwood,mvebu,omap,rk,siemens,mx,sunxi,technexion,toradex"
+          name: arm_catch_all
         aarch64_catch_all:
           BUILDMAN: "aarch64 -x amlogic,bcm,engicam,imx,ls1,ls2,lx216,mvebu,rk,siemens,sunxi,toradex"
+          name: aarch64_catch_all
         everything_but_arm_and_powerpc:
           BUILDMAN: "-x arm,powerpc"
+          name: everything_but_arm_and_powerpc
     steps:
       - script: |
           cat << EOF > build.sh
@@ -52,14 +62,25 @@ stages:
           pip install -r tools/buildman/requirements.txt
           EOF
           cat << "EOF" >> build.sh
+          echo $(System.JobName)
+          echo "##vso[task.setvariable variable=myStageVal;isoutput=true]this is a stage output variable .$(System.JobName)."
           if [[ "${BUILDMAN}" != "" ]]; then
               ret=0;
-              tools/buildman/buildman -o /tmp -PEWM ${BUILDMAN} ${OVERRIDE} || ret=$?;
-              if [[ $ret -ne 0 ]]; then
-                  tools/buildman/buildman -o /tmp -seP ${BUILDMAN};
-                  exit $ret;
-              fi;
+              echo "##vso[task.setvariable variable=boards;isOutput=true]$(tools/buildman/buildman -o /tmp --dry-run -v ${BUILDMAN} | grep -E '^   ' | tr '\n' ' ')";
           fi
           EOF
           cat build.sh
           docker run -v $PWD:$(work_dir) $(ci_runner_image) /bin/bash $(work_dir)/build.sh
+        name: $[ System.JobName ]
+
+- stage: count_em_all
+  dependsOn: world_build
+  jobs:
+    - job: count_all_boards
+      pool:
+        vmImage: $(ubuntu_vm)
+      variables:
+        allboards: $[stageDependencies.world_build.rk.outputs['rk.boards']]
+      steps:
+        # 6 extra lines
+        - bash: echo == ${allboards} == ${myStageVal} == $(System.PhaseName) ==
